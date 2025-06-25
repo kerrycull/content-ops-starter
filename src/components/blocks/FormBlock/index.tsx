@@ -35,8 +35,7 @@ export default function FormBlock(props) {
             id={elementId}
             method="POST"
             data-netlify="true"
-            netlify="true"
-            netlify-honeypot="bot-field"
+            data-netlify-honeypot="bot-field"
             ref={formRef}
             data-sb-field-path={fieldPath}
         >
