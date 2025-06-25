@@ -15,7 +15,7 @@
     "secondaryLinks": [
         {
             "type": "Button",
-            "label": "Get in touch",
+            "label": "Get in Touch",
             "altText": "",
             "url": "/#contactsection",
             "showIcon": false,
