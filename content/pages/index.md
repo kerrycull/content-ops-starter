@@ -48,7 +48,7 @@ sections:
         self:
           textAlign: center
       type: TitleBlock
-    subtitle: Powering growth for top brands across diverse industries
+    subtitle: Powering Growth for Top Brands Across Diverse Industries
     items:
       - type: FeaturedItem
         title: Performance
@@ -145,7 +145,7 @@ sections:
         justifyContent: center
       subtitle:
         textAlign: center
-  - subtitle: Trusted by leading brands
+  - subtitle: Trusted by Leading Brands
     images:
       - url: /images/hellofreshlogo.svg
         altText: Empathy logo
@@ -177,7 +177,7 @@ sections:
         textAlign: center
     type: ImageGallerySection
   - type: FeaturedItemsSection
-    subtitle: Our process
+    subtitle: Our Process
     items:
       - type: FeaturedItem
         title: 1. Finding the Perfect Fit
