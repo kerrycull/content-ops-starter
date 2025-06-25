@@ -520,33 +520,46 @@ sections:
           - pl-3
           - pb-3
           - pr-3
-  - subtitle: Find out how we can help you
+  - type: GenericSection
+    title:
+      type: TitleBlock
+      text: Say Hi!
+      color: text-dark
+    subtitle: ''
     text: >
       Have a project in mind or just want to explore how we can work together?
       Drop us a message and our team will get back to you within one business
       day. We're here to turn your ideas into impact.
+    actions: []
     media:
+      type: FormBlock
       fields:
-        - name: name
+        - type: TextFormControl
+          name: name
           label: Name
           hideLabel: true
           placeholder: Your name
           isRequired: true
           width: full
-          type: TextFormControl
-        - name: email
+        - type: EmailFormControl
+          name: email
           label: Email
           hideLabel: true
           placeholder: Your email
           isRequired: true
           width: full
-          type: EmailFormControl
-        - name: message
+        - type: TextareaFormControl
+          name: message
           label: Message
           hideLabel: true
           placeholder: Your message
           width: full
-          type: TextareaFormControl
+      submitButton:
+        type: SubmitButtonFormControl
+        label: Submit
+        icon: arrowRight
+        iconPosition: right
+        style: primary
       elementId: contact-form
       styles:
         self:
@@ -559,17 +572,11 @@ sections:
           borderStyle: solid
           borderWidth: 1
           borderRadius: large
-      type: FormBlock
-      submitButton:
-        type: SubmitButtonFormControl
-        label: Submit
-        showIcon: false
-        icon: arrowRight
-        iconPosition: right
-        style: primary
-        elementId: null
+    badge:
+      type: Badge
+      label: ''
+      color: text-primary
     colors: bg-light-fg-dark
-    type: GenericSection
     elementId: contactsection
 seo:
   metaTitle: cull.media
