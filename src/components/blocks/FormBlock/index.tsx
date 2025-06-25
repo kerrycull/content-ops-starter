@@ -25,7 +25,7 @@ export default function FormBlock(props) {
             await fetch('/', {
                 method: 'POST',
                 headers: { Accept: 'application/x-www-form-urlencoded' },
-                body: new URLSearchParams(Array.from(formData) as [string, string])
+                body: new URLSearchParams(Array.from(formData.entries()).map(([k, v]) => [k, String(v)]))
             });
             setSubmitted(true);
             formRef.current.reset();
