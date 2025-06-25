@@ -13,6 +13,14 @@ export default function FormBlock(props) {
         return null;
     }
 
+    function handleSubmit(event) {
+        event.preventDefault();
+
+        const data = new FormData(formRef.current);
+        const value = Object.fromEntries(data.entries());
+        //alert(`Form data: ${JSON.stringify(value)}`);
+    }
+
     return (
         <form
             className={classNames(
@@ -33,26 +41,16 @@ export default function FormBlock(props) {
             )}
             name={elementId}
             id={elementId}
-            method="POST"
-            data-netlify="true"
-            data-netlify-honeypot="bot-field"
+            onSubmit={handleSubmit}
             ref={formRef}
             data-sb-field-path={fieldPath}
+            data-netlify="true"
         >
-            {/* Netlify-required fields */}
-            <input type="hidden" name="form-name" value={elementId} />
-            <input type="hidden" name="bot-field" />
-            {/* Optionally, add a visible honeypot field if you want (recommended for spam prevention) */}
-            <div style={{ display: 'none' }}>
-                <label>
-                    Don’t fill this out: <input name="bot-field" />
-                </label>
-            </div>
-
             <div
                 className={classNames('w-full', 'flex', 'flex-wrap', 'gap-8', mapStyles({ justifyContent: styles?.self?.justifyContent ?? 'flex-start' }))}
                 {...(fieldPath && { 'data-sb-field-path': '.fields' })}
             >
+                <input type="hidden" name="form-name" value={elementId} />
                 {fields.map((field, index) => {
                     const modelName = field.__metadata.modelName;
                     if (!modelName) {
