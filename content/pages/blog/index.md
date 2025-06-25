@@ -1,32 +1,9 @@
 ---
 title: Blog
-slug: /blog
+slug: /
 numOfPostsPerPage: 8
 enableSearch: true
-topSections:
-  - title:
-      text: Featured Post
-      color: text-dark
-      type: TitleBlock
-    subtitle: This is the subtitle
-    posts:
-      - content/pages/blog/top-ten-lessons-we-learned.md
-    showThumbnail: true
-    showExcerpt: true
-    showDate: true
-    showAuthor: true
-    variant: big-list
-    colors: bg-light-fg-dark
-    styles:
-      self:
-        padding:
-          - pt-28
-          - pb-0
-          - pl-4
-          - pr-4
-        justifyContent: flex-start
-    type: FeaturedPostsSection
-    hoverEffect: move-up
+topSections: []
 styles:
   title:
     textAlign: center
@@ -52,4 +29,5 @@ postFeed:
   variant: three-col-grid
   colors: bg-light-fg-dark
   hoverEffect: move-up
+isDraft: true
 ---

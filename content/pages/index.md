@@ -3,71 +3,59 @@ title: Home
 slug: /
 sections:
   - type: GenericSection
-    title:
-      text: Unblock your team boost your time to production
-      color: text-dark
-      type: TitleBlock
-    subtitle: Subtitle goes here
+    subtitle: Full-Funnel Influencer Marketing
     text: >
-      A Netlify Create website is a git repo that you own. Every code commit is
-      instantly reflected in the visual editor and since every visual edit is a
-      git commit, git workflows and collaboration just work.
-    actions:
-      - label: Get started
-        altText: ''
-        url: /
-        showIcon: false
-        icon: arrowRight
-        iconPosition: right
-        style: secondary
-        elementId: ''
-        type: Button
-      - label: See Tutorials
-        altText: ''
-        url: /
-        showIcon: true
-        icon: arrowRight
-        iconPosition: right
-        style: primary
-        elementId: ''
-        type: Link
+      Through strategic creator selection, high-impact content, and end-to-end
+      campaign execution, we help brands cut through the noise and build
+      meaningful connections that convert.
+    actions: []
     media:
-      url: /images/main-hero.svg
-      altText: Unblock your team boost your time to production preview
-      elementId: ''
-      type: ImageBlock
-    badge:
-      label: This is a badge
-      color: text-primary
-      type: Badge
-    elementId: ''
+      type: VideoBlock
+      title: websitevideo
+      url: /images/websitepreview.mp4
+      autoplay: true
+      loop: true
+      muted: true
+      controls: false
+      aspectRatio: '16:9'
+      styles:
+        self:
+          padding:
+            - pt-2
+            - pb-2
+            - pl-2
+            - pr-2
+          borderColor: border-dark
+          borderStyle: solid
+          borderWidth: 1
+          borderRadius: large
     colors: bg-light-fg-dark
     styles:
       self:
-        alignItems: center
         flexDirection: row
-        padding:
-          - pt-16
-          - pl-16
-          - pb-16
-          - pr-16
+        justifyContent: center
+      subtitle:
+        textAlign: left
+    title:
+      type: TitleBlock
+      text: Tailored for Impact
+      color: text-dark
   - type: FeaturedItemsSection
     title:
-      text: Key Benefits
+      text: ''
       color: text-dark
       styles:
         self:
           textAlign: center
       type: TitleBlock
-    subtitle: Subtitle goes here
+    subtitle: Powering growth for top brands across diverse industries
     items:
       - type: FeaturedItem
-        title: 500k
-        subtitle: Numbers Done
-        text: >-
-          Sed ut perspiciatis unde omnis iste natus error sit voluptatem
-          accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae.
-          explicabo.
+        title: Performance
+        subtitle: 100M+ Views in 2025
+        text: >
+          Ensuring your brand shows up where it matters—in content that’s
+          relevant, authentic, and niche-aligned.
         actions: []
         elementId: null
         colors: bg-neutralAlt-fg-dark
@@ -90,12 +78,11 @@ sections:
           styles:
             self:
               borderRadius: x-large
-      - title: 20x
-        subtitle: The Job Stuff
-        text: >-
-          Sed ut perspiciatis unde omnis iste natus error sit voluptatem
-          accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae.
-          explicabo.
+      - title: Clarity
+        subtitle: Authentic Brand Stories
+        text: >
+          Every project is backed by clear, timely communication to ensure
+          smooth execution and shared success.
         image:
           url: /images/icon2.svg
           altText: Featured icon two
@@ -115,12 +102,11 @@ sections:
             textAlign: left
             justifyContent: center
         type: FeaturedItem
-      - title: 200%
-        subtitle: Faster
-        text: >-
-          Sed ut perspiciatis unde omnis iste natus error sit voluptatem
-          accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae.
-          explicabo.
+      - title: Intelligence
+        subtitle: Stat-Driven Success
+        text: >
+          Performance data is continuously analyzed to refine strategy and drive
+          consistent, measurable success.
         image:
           url: /images/icon3.svg
           altText: Featured icon three
@@ -138,18 +124,9 @@ sections:
             borderRadius: x-large
             flexDirection: row
         type: FeaturedItem
-    actions:
-      - label: Get started
-        altText: ''
-        url: /
-        showIcon: false
-        icon: arrowRight
-        iconPosition: right
-        style: primary
-        elementId: ''
-        type: Button
+    actions: []
     badge:
-      label: This is a badge
+      label: ''
       color: text-primary
       styles:
         self:
@@ -168,27 +145,27 @@ sections:
         justifyContent: center
       subtitle:
         textAlign: center
-  - subtitle: Award winning enterprises trust us
+  - subtitle: Trusted by leading brands
     images:
-      - url: /images/empathy-logo.svg
+      - url: /images/hellofreshlogo.svg
         altText: Empathy logo
         type: ImageBlock
-      - url: /images/wellster-logo.svg
+      - url: /images/auralogo.svg
         altText: Wellster logo
         type: ImageBlock
-      - url: /images/vise-logo.svg
+      - url: /images/casetifylogo.svg
         altText: Vise logo
         type: ImageBlock
-      - url: /images/telus-logo.svg
+      - url: /images/audiblelogo.svg
         altText: Telus logo
         type: ImageBlock
-      - url: /images/contenful-logo.svg
+      - url: /images/sailylogo.svg
         altText: Contentful logo
         type: ImageBlock
-      - url: /images/sanity-logo.svg
+      - url: /images/nordlogo.svg
         altText: Sanity logo
         type: ImageBlock
-      - url: /images/rangle-logo.svg
+      - url: /images/dysonlogo.svg
         altText: Rangle logo
         type: ImageBlock
     motion: move-to-left
@@ -199,473 +176,151 @@ sections:
       subtitle:
         textAlign: center
     type: ImageGallerySection
-  - posts:
-      - content/pages/blog/case-study-1.md
-      - content/pages/blog/case-study-2.md
-      - content/pages/blog/case-study-3.md
-    showThumbnail: true
-    showDate: true
-    showAuthor: true
-    variant: three-col-grid
-    colors: bg-light-fg-dark
-    styles:
-      self:
-        padding:
-          - pt-16
-          - pl-16
-          - pb-16
-          - pr-16
-        justifyContent: center
-    type: FeaturedPostsSection
-    hoverEffect: move-up
-  - title: Divider
-    colors: bg-light-fg-dark
-    styles:
-      self:
-        padding:
-          - pt-7
-          - pl-7
-          - pb-7
-          - pr-7
-    type: DividerSection
-  - title:
-      text: Grow your business 10x faster
-      color: text-dark
-      styles:
-        self:
-          textAlign: center
-      type: TitleBlock
-    subtitle: This is a subtitle
-    text: |-
-      Aenean eros ipsum, interdum quis dignissim non, sollicitudin vitae nisl.
-      Aenean vel aliquet elit, at blandit ipsum. Sed eleifend felis sit amet
-      erat molestie, hendrerit malesuada justo ultrices. Nunc volutpat at erat
-      vitae interdum. Ut nec massa eget lorem blandit condimentum et at risus.
-    media:
-      title: Title of the video
-      url: /images/placeholder-video.mp4
-      controls: false
-      aspectRatio: '16:9'
-      styles:
-        self:
-          padding:
-            - pt-2
-            - pb-2
-            - pl-2
-            - pr-2
-          borderColor: border-dark
-          borderStyle: solid
-          borderWidth: 1
-          borderRadius: large
-      type: VideoBlock
-      autoplay: true
-      loop: true
-      muted: true
-    badge:
-      label: Key Benefits
-      color: text-primary
-      styles:
-        self:
-          textAlign: center
-      type: Badge
-    colors: bg-light-fg-dark
-    styles:
-      self:
-        flexDirection: col
-        justifyContent: center
-      subtitle:
-        textAlign: center
-    type: GenericSection
-  - type: GenericSection
-    title:
-      text: Generic section with a video
-      color: text-dark
-      styles:
-        self:
-          textAlign: left
-      type: TitleBlock
-    subtitle: Section with a video subtitle
-    text: |-
-      Aenean eros ipsum, interdum quis dignissim non, sollicitudin vitae nisl.
-      Aenean vel aliquet elit, at blandit ipsum. Sed eleifend felis sit amet
-      erat molestie, hendrerit malesuada justo ultrices. Nunc volutpat at erat
-      vitae interdum. Ut nec massa eget lorem blandit condimentum et at risus.
+  - type: FeaturedItemsSection
+    subtitle: Our process
+    items:
+      - type: FeaturedItem
+        title: 1. Finding the Perfect Fit
+        tagline: ''
+        subtitle: ''
+        text: >
+          We’ll introduce you to the team and work with you to define clear
+          goals that support your brand’s success.
+        actions: []
+        colors: bg-light-fg-dark
+        styles:
+          self:
+            padding:
+              - pt-8
+              - pl-8
+              - pb-8
+              - pr-8
+            borderRadius: x-large
+            flexDirection: col
+      - type: FeaturedItem
+        title: 2. Select with Confidence
+        tagline: ''
+        subtitle: ''
+        text: >
+          Once you receive our recommendations, you’ll have the freedom to
+          choose the creator(s) that best align with your campaign goals.
+        image:
+          type: ImageBlock
+          altText: Placeholder image
+          styles:
+            self:
+              borderRadius: x-large
+        actions: []
+        colors: bg-light-fg-dark
+        styles:
+          self:
+            padding:
+              - pt-8
+              - pl-8
+              - pb-8
+              - pr-8
+            borderRadius: x-large
+            flexDirection: col
+      - type: FeaturedItem
+        title: 3. Turning Briefs into Brilliance
+        tagline: ''
+        subtitle: ''
+        text: >
+          Your selected creator will produce organic, engaging content tailored
+          to your brand and aligned with the campaign brief.
+        image:
+          type: ImageBlock
+          altText: Placeholder image
+          styles:
+            self:
+              borderRadius: x-large
+        actions: []
+        colors: bg-light-fg-dark
+        styles:
+          self:
+            padding:
+              - pt-8
+              - pl-8
+              - pb-8
+              - pr-8
+            borderRadius: x-large
+            flexDirection: col
+      - type: FeaturedItem
+        title: 4. Polished to Perfection
+        tagline: ''
+        subtitle: ''
+        text: >
+          Every sponsorship draft lands in your hands first—we fine-tune based
+          on your feedback and guarantee full FTC compliance from start to
+          finish.
+        image:
+          type: ImageBlock
+          altText: Placeholder text
+          styles:
+            self:
+              borderRadius: x-large
+        actions: []
+        colors: bg-light-fg-dark
+        styles:
+          self:
+            padding:
+              - pt-8
+              - pl-8
+              - pb-8
+              - pr-8
+            borderRadius: x-large
+            flexDirection: col
+      - type: FeaturedItem
+        title: '5. Your Campaign, in Motion'
+        tagline: ''
+        subtitle: ''
+        text: >
+          We handle all scheduling, making sure influencers post on time with
+          the correct tracking links—so every piece of content is measured and
+          on-message.
+        image:
+          type: ImageBlock
+          altText: Placeholder text
+          styles:
+            self:
+              borderRadius: x-large
+        actions: []
+        colors: bg-light-fg-dark
+        styles:
+          self:
+            padding:
+              - pt-8
+              - pl-8
+              - pb-8
+              - pr-8
+            borderRadius: x-large
+            flexDirection: col
+      - type: FeaturedItem
+        title: 6. Data-Driven Wins
+        tagline: ''
+        subtitle: ''
+        text: >
+          With our real-time analytics, you’ll spot what’s clicking, what’s
+          converting, and instantly steer your campaign toward top-performing
+          content.
+        image:
+          type: ImageBlock
+          altText: Placeholder text
+          styles:
+            self:
+              borderRadius: x-large
+        actions: []
+        colors: bg-light-fg-dark
+        styles:
+          self:
+            padding:
+              - pt-8
+              - pl-8
+              - pb-8
+              - pr-8
+            borderRadius: x-large
+            flexDirection: col
     actions: []
-    media:
-      title: Title of the video
-      url: /images/placeholder-video.mp4
-      autoplay: true
-      loop: true
-      muted: true
-      controls: false
-      aspectRatio: '16:9'
-      styles:
-        self:
-          padding:
-            - pt-2
-            - pb-2
-            - pl-2
-            - pr-2
-          borderColor: border-dark
-          borderStyle: solid
-          borderWidth: 1
-          borderRadius: large
-      type: VideoBlock
-    elementId: null
-    colors: bg-light-fg-dark
-    styles:
-      self:
-        flexDirection: row
-        justifyContent: center
-      subtitle:
-        textAlign: left
-  - title:
-      text: Social Media Management
-      color: text-dark
-      type: TitleBlock
-    subtitle: Increase your reach
-    text: >
-      A service that helps businesses to manage their social media accounts and
-      posts.
-    actions:
-      - label: Get started
-        url: /
-        icon: arrowRight
-        iconPosition: right
-        style: secondary
-        type: Button
-      - label: See Tutorials
-        url: /
-        showIcon: true
-        icon: arrowRight
-        iconPosition: right
-        style: primary
-        type: Link
-    media:
-      url: /images/hero2.svg
-      altText: Fun feature preview
-      type: ImageBlock
-    badge:
-      label: This is a badge
-      color: text-primary
-      type: Badge
-    colors: bg-light-fg-dark
-    styles:
-      self:
-        alignItems: center
-    type: GenericSection
-  - title:
-      text: Business Consulting
-      color: text-dark
-      type: TitleBlock
-    subtitle: Be in good company
-    text: >
-      A service that provides advice and guidance to startups and small
-      businesses.
-    actions:
-      - label: Get started
-        url: /
-        icon: arrowRight
-        iconPosition: right
-        style: secondary
-        type: Button
-      - label: See Tutorials
-        url: /
-        showIcon: true
-        icon: arrowRight
-        iconPosition: right
-        style: primary
-        type: Link
-    media:
-      url: /images/hero3.svg
-      altText: Dope design preview
-      type: ImageBlock
-    badge:
-      label: This is a badge
-      color: text-primary
-      type: Badge
-    colors: bg-light-fg-dark
-    styles:
-      self:
-        alignItems: center
-        flexDirection: row-reverse
-    type: GenericSection
-  - title: Divider
-    colors: bg-light-fg-dark
-    styles:
-      self:
-        padding:
-          - pt-7
-          - pl-7
-          - pb-7
-          - pr-7
-    type: DividerSection
-  - type: CarouselSection
-    title: null
-    subtitle: What our customers say about us
-    items:
-      - title: >-
-          “A designer knows he has achieved perfection not when there is nothing
-          left to add, but when there is nothing left to take away.”
-        tagline: Testimonial 1
-        subtitle: 'Maria Walters, Company'
-        text: >-
-          Sed ut perspiciatis unde omnis iste natus error sit voluptatem
-          accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae.
-          explicabo.
-        image:
-          url: /images/person-placeholder-light.png
-          altText: Maria Walters
-          styles:
-            self:
-              borderRadius: full
-          type: ImageBlock
-        actions: []
-        colors: bg-neutralAlt-fg-dark
-        styles:
-          self:
-            padding:
-              - pt-9
-              - pb-9
-              - pl-9
-              - pr-9
-            textAlign: left
-            borderRadius: large
-            flexDirection: row
-            justifyContent: center
-        type: FeaturedItem
-      - title: >-
-          "Design is a plan for arranging elements in such a way as best to accomplish a particular purpose."
-        tagline: Testimonial 2
-        subtitle: 'John Doe, Company'
-        text: >-
-          Sed ut perspiciatis unde omnis iste natus error sit voluptatem
-          accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae.
-          explicabo.
-        image:
-          url: /images/person-placeholder-light.png
-          altText: John Doe
-          styles:
-            self:
-              borderRadius: full
-          type: ImageBlock
-        actions: []
-        colors: bg-neutralAlt-fg-dark
-        styles:
-          self:
-            padding:
-              - pt-9
-              - pb-9
-              - pl-9
-              - pr-9
-            textAlign: left
-            borderRadius: large
-            flexDirection: row
-            justifyContent: center
-        type: FeaturedItem
-      - title: >-
-          "Design is how it works, how it functions. Good design doesn't just make a product aesthetically pleasing, it makes it a pleasure to use."
-        tagline: Testimonial 3
-        subtitle: 'Maria Walters, Company'
-        text: >-
-          Sed ut perspiciatis unde omnis iste natus error sit voluptatem
-          accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae.
-          explicabo.
-        image:
-          url: /images/person-placeholder-light.png
-          altText: Maria Walters
-          styles:
-            self:
-              borderRadius: full
-          type: ImageBlock
-        actions: []
-        colors: bg-neutralAlt-fg-dark
-        styles:
-          self:
-            padding:
-              - pt-9
-              - pb-9
-              - pl-9
-              - pr-9
-            textAlign: left
-            borderRadius: large
-            flexDirection: row
-            justifyContent: center
-        type: FeaturedItem
-      - title: >-
-          “A designer knows he has achieved perfection not when there is nothing
-          left to add, but when there is nothing left to take away.”
-        tagline: Testimonial 4
-        subtitle: 'Maria Walters, Company'
-        text: >-
-          Sed ut perspiciatis unde omnis iste natus error sit voluptatem
-          accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae.
-          explicabo.
-        image:
-          url: /images/person-placeholder-light.png
-          altText: Maria Walters
-          styles:
-            self:
-              borderRadius: full
-          type: ImageBlock
-        actions: []
-        colors: bg-neutralAlt-fg-dark
-        styles:
-          self:
-            padding:
-              - pt-9
-              - pb-9
-              - pl-9
-              - pr-9
-            textAlign: left
-            borderRadius: large
-            flexDirection: row
-            justifyContent: center
-        type: FeaturedItem
-      - title: >-
-          "Design can be art. Design can be aesthetics. Design is so simple, that's why it is so complicated."
-        tagline: Testimonial 5
-        subtitle: 'Jane Walters, Company'
-        text: >-
-          Sed ut perspiciatis unde omnis iste natus error sit voluptatem
-          accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae.
-          explicabo.
-        image:
-          url: /images/person-placeholder-light.png
-          altText: Maria Walters
-          styles:
-            self:
-              borderRadius: full
-          type: ImageBlock
-        actions: []
-        colors: bg-neutralAlt-fg-dark
-        styles:
-          self:
-            padding:
-              - pt-9
-              - pb-9
-              - pl-9
-              - pr-9
-            textAlign: left
-            borderRadius: large
-            flexDirection: row
-            justifyContent: center
-        type: FeaturedItem
-      - title: >-
-          “Quote from some important person goes right here. I love using Netlify Create.”
-        tagline: Testimonial 6
-        subtitle: 'Jane Doe, Company'
-        text: >-
-          Sed ut perspiciatis unde omnis iste natus error sit voluptatem
-          accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae.
-          explicabo.
-        image:
-          url: /images/img-placeholder-dark.png
-          altText: Jane Doe
-          styles:
-            self:
-              borderRadius: full
-          type: ImageBlock
-        actions: []
-        colors: bg-dark-fg-light
-        styles:
-          self:
-            padding:
-              - pt-9
-              - pb-9
-              - pl-9
-              - pr-9
-            textAlign: left
-            borderRadius: large
-            flexDirection: row
-            justifyContent: center
-        type: FeaturedItem
-    elementId: null
-    variant: next-prev-nav
-    colors: bg-light-fg-dark
-    styles:
-      self:
-        justifyContent: center
-      subtitle:
-        textAlign: center
-  - title:
-      text: List of features here
-      color: text-primary
-      styles:
-        self:
-          textAlign: center
-      type: TitleBlock
-    subtitle: Featured items section subtitle
-    items:
-      - title: Feature Item One
-        tagline: This is the tagline
-        subtitle: This is the item subtitle
-        text: |
-          Follow the tutorial to build your first Netlify Create site.
-        image:
-          url: /images/abstract-feature1.svg
-          altText: Placeholder Image
-          styles:
-            self:
-              borderRadius: x-large
-          type: ImageBlock
-        colors: bg-light-fg-dark
-        styles:
-          self:
-            padding:
-              - pt-8
-              - pl-8
-              - pb-8
-              - pr-8
-            borderRadius: x-large
-            flexDirection: col
-        type: FeaturedItem
-      - title: Feature Item Two
-        tagline: This is the tagline
-        subtitle: This is the item subtitle
-        text: |
-          Follow the tutorial to build your first awesome Netlify Create site.
-        image:
-          url: /images/abstract-feature2.svg
-          altText: Placeholder image
-          styles:
-            self:
-              borderRadius: x-large
-          type: ImageBlock
-        colors: bg-light-fg-dark
-        styles:
-          self:
-            padding:
-              - pt-8
-              - pl-8
-              - pb-8
-              - pr-8
-            borderRadius: x-large
-            flexDirection: col
-        type: FeaturedItem
-      - title: Feature Item Three
-        tagline: This is the tagline
-        subtitle: This is the item subtitle
-        text: |
-          Learn from the tutorial and build your first awesome Netlify Create site.
-        image:
-          url: /images/abstract-feature1.svg
-          altText: Placeholder image
-          styles:
-            self:
-              borderRadius: x-large
-          type: ImageBlock
-        colors: bg-light-fg-dark
-        styles:
-          self:
-            padding:
-              - pt-8
-              - pl-8
-              - pb-8
-              - pr-8
-            borderRadius: x-large
-            flexDirection: col
-        type: FeaturedItem
     variant: three-col-grid
     colors: bg-neutral-fg-dark
     styles:
@@ -678,17 +333,198 @@ sections:
         justifyContent: center
       subtitle:
         textAlign: center
-    type: FeaturedItemsSection
-  - title:
-      text: Generic Section With A Form
-      color: text-dark
+  - type: CarouselSection
+    items:
+      - type: FeaturedItem
+        title: YouTube
+        tagline: ''
+        subtitle: Visibility That Converts
+        text: >
+          We offer YouTube brand promotions through both dedicated videos and
+          seamless integrations. Dedicated videos run 10–20 minutes and focus
+          entirely on showcasing your brand, featuring in-depth product
+          highlights and strong calls-to-action. For a lighter touch, integrated
+          segments (60–90 seconds) are woven into the influencer’s usual
+          content, delivering key messaging with clear prompts at the start and
+          end to drive engagement.
+        actions: []
+        colors: bg-neutralAlt-fg-dark
+        styles:
+          self:
+            padding:
+              - pt-9
+              - pb-9
+              - pl-9
+              - pr-9
+            textAlign: left
+            borderRadius: large
+            flexDirection: row
+            justifyContent: center
+        image:
+          type: ImageBlock
+          url: /images/youtubelogo.png
+          altText: Image alt text placeholder
+          elementId: ''
+          styles:
+            self:
+              borderRadius: medium
+      - type: FeaturedItem
+        title: Instagram & TikTok
+        tagline: ''
+        subtitle: Trending by Design
+        text: >
+          We create impactful brand placements across Instagram and TikTok
+          through in-feed posts, stories, and reels. In-feed content showcases
+          eye-catching photos or videos with strong captions, promo codes, and
+          clear calls-to-action. Stories offer short-lived, high-engagement
+          moments that drive action through linked stickers, while reels deliver
+          fast-paced, shareable videos designed to spark interest and send
+          viewers directly to your bio link.
+        image:
+          type: ImageBlock
+          url: /images/igtiktok.png
+          altText: Business consulting
+          elementId: ''
+          styles:
+            self:
+              borderRadius: medium
+        actions: []
+        colors: bg-neutralAlt-fg-dark
+        styles:
+          self:
+            padding:
+              - pt-9
+              - pb-9
+              - pl-9
+              - pr-9
+            textAlign: left
+            borderRadius: large
+            flexDirection: row
+            justifyContent: center
+      - type: FeaturedItem
+        title: Podcast
+        tagline: ''
+        subtitle: 'Trusted Voices, Targeted Reach'
+        text: >
+          We offer podcast advertising through both evergreen, host-read ads and
+          dynamic insertions. Evergreen ads are 60-second endorsements baked
+          into episodes, where hosts share authentic, personal experiences with
+          your brand—building long-term listener trust and engagement. For
+          flexible reach, dynamic ads (15, 30, or 60 seconds) can be
+          pre-recorded and inserted into episodes based on audience segments,
+          show type, or buying preferences, with options for both host-voiced or
+          generic versions.
+        image:
+          type: ImageBlock
+          url: /images/podcastlogo.png
+          altText: Business consulting
+          elementId: ''
+          styles:
+            self:
+              borderRadius: medium
+        actions: []
+        colors: bg-neutralAlt-fg-dark
+        styles:
+          self:
+            padding:
+              - pt-9
+              - pb-9
+              - pl-9
+              - pr-9
+            textAlign: left
+            borderRadius: large
+            flexDirection: row
+            justifyContent: center
+      - type: FeaturedItem
+        title: Livestream
+        tagline: ''
+        subtitle: Moments That Stick
+        text: >
+          We offer Twitch activations through dedicated livestreams and extended
+          sponsorships. Dedicated streams typically run 2–4 hours and focus
+          entirely on promoting your product, game, or service, complete with
+          overlays, banner images, and clickable chatbot calls-to-action. For
+          longer-term exposure, streamers can feature your brand 1–2 times per
+          week during peak hours, with 2–5 minute segments integrated naturally
+          into their content—also supported by custom visuals and interactive
+          elements.
+        image:
+          type: ImageBlock
+          url: /images/twitchlogo.png
+          altText: Business consulting
+          elementId: ''
+          styles:
+            self:
+              borderRadius: medium
+        actions: []
+        colors: bg-neutral-fg-dark
+        styles:
+          self:
+            padding:
+              - pt-9
+              - pb-9
+              - pl-9
+              - pr-9
+            textAlign: left
+            borderRadius: large
+            flexDirection: row
+            justifyContent: center
+    variant: next-prev-nav
+    colors: bg-light-fg-dark
+    styles:
+      self:
+        justifyContent: center
+      subtitle:
+        textAlign: center
+  - type: DividerSection
+    title: Divider
+    elementId: ''
+    colors: bg-light-fg-dark
+    styles:
+      self:
+        padding:
+          - pt-3
+          - pl-3
+          - pb-3
+          - pr-3
+  - type: GenericSection
+    title:
       type: TitleBlock
-    subtitle: Section with a form subtitle
-    text: |-
-      Aenean eros ipsum, interdum quis dignissim non, sollicitudin vitae nisl.
-      Aenean vel aliquet elit, at blandit ipsum. Sed eleifend felis sit amet
-      erat molestie, hendrerit malesuada justo ultrices. Nunc volutpat at erat
-      vitae interdum. Ut nec massa eget lorem blandit condimentum et at risus.
+      text: Creator Outreach
+      color: text-dark
+    subtitle: We’ll Find the Perfect Match
+    text: >
+      When it comes to talent, we don’t just pull from a static roster—we
+      actively tap into our ever-expanding network of vetted creators across
+      platforms and niches. Whether you have a specific brief or are starting
+      from scratch, we’ll identify the best voices for your brand, backed by
+      audience data and performance insight, to ensure every partnership feels
+      authentic and drives results.
+    actions: []
+    media:
+      type: ImageBlock
+      url: /images/creatorpanel.jpg
+      altText: Fun feature preview
+    colors: bg-light-fg-dark
+    styles:
+      self:
+        alignItems: center
+  - type: DividerSection
+    title: Divider
+    elementId: ''
+    colors: bg-light-fg-dark
+    styles:
+      self:
+        padding:
+          - pt-3
+          - pl-3
+          - pb-3
+          - pr-3
+  - subtitle: Find out how we can help you
+    text: >
+      Have a project in mind or just want to explore how we can work together?
+      Drop us a message and our team will get back to you within one business
+      day. We're here to turn your ideas into impact.
     media:
       fields:
         - name: name
@@ -732,12 +568,9 @@ sections:
         iconPosition: right
         style: primary
         elementId: null
-    badge:
-      label: Contact Us
-      color: text-primary
-      type: Badge
     colors: bg-light-fg-dark
     type: GenericSection
+    elementId: contactsection
 seo:
   metaTitle: Home - Demo site
   metaDescription: This demo site is built with Netlify Create.

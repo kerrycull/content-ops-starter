@@ -1,91 +1,28 @@
 {
     "logo": {
-        "url": "/images/logo-dark.svg",
+        "url": "/images/cullmedialogolong-40h.svg",
         "altText": "Logo dark",
         "styles": {
             "self": {
-                "margin": ["mr-3"]
+                "margin": [
+                    "mr-3"
+                ]
             }
         },
         "type": "ImageBlock"
     },
-    "primaryLinks": [
-        {
-            "label": "Pricing",
-            "url": "/pricing",
-            "icon": "arrowRight",
-            "iconPosition": "right",
-            "style": "secondary",
-            "type": "Link"
-        },
-        {
-            "label": "Blog",
-            "altText": "Blog",
-            "url": "/blog",
-            "icon": "arrowRight",
-            "iconPosition": "right",
-            "style": "secondary",
-            "type": "Link"
-        },
-        {
-            "label": "Careers",
-            "altText": "Careers page",
-            "url": "/careers",
-            "icon": "arrowRight",
-            "iconPosition": "right",
-            "style": "secondary",
-            "type": "Link"
-        },
-        {
-            "label": "Dropdown",
-            "altText": "Dropdown",
-            "links": [
-                {
-                    "label": "Dropdown item",
-                    "url": "/",
-                    "icon": "arrowRight",
-                    "iconPosition": "right",
-                    "style": "secondary",
-                    "type": "Link"
-                },
-                {
-                    "label": "Dropdown item",
-                    "url": "/",
-                    "icon": "arrowRight",
-                    "iconPosition": "right",
-                    "style": "secondary",
-                    "type": "Link"
-                },
-                {
-                    "label": "Dropdown item",
-                    "url": "/",
-                    "icon": "arrowRight",
-                    "iconPosition": "right",
-                    "style": "secondary",
-                    "type": "Link"
-                }
-            ],
-            "labelStyle": "secondary",
-            "type": "SubNav"
-        }
-    ],
+    "primaryLinks": [],
     "secondaryLinks": [
         {
-            "label": "Sign up",
-            "altText": "Sign up",
-            "url": "https://app.netlify.com/signup",
-            "icon": "arrowRight",
-            "iconPosition": "right",
-            "style": "secondary",
-            "type": "Button"
-        },
-        {
-            "label": "Log in",
-            "url": "/",
+            "type": "Button",
+            "label": "Get in touch",
+            "altText": "",
+            "url": "/#contactsection",
+            "showIcon": false,
             "icon": "arrowRight",
             "iconPosition": "right",
             "style": "primary",
-            "type": "Button"
+            "elementId": ""
         }
     ],
     "variant": "logo-left-primary-nav-centered",
