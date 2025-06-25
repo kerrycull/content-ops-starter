@@ -572,9 +572,9 @@ sections:
     type: GenericSection
     elementId: contactsection
 seo:
-  metaTitle: Home - Demo site
-  metaDescription: This demo site is built with Netlify Create.
-  socialImage: /images/main-hero.jpg
+  metaTitle: cullmedia
+  metaDescription: Influencer Marketing
+  socialImage: /images/Screenshot 2025-06-25 at 3.42.41 pm.png
   type: Seo
 type: PageLayout
 ---
