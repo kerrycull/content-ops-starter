@@ -35,10 +35,21 @@ export default function FormBlock(props) {
             id={elementId}
             method="POST"
             data-netlify="true"
+            netlify="true"
+            netlify-honeypot="bot-field"
             ref={formRef}
             data-sb-field-path={fieldPath}
         >
+            {/* Netlify-required fields */}
             <input type="hidden" name="form-name" value={elementId} />
+            <input type="hidden" name="bot-field" />
+            {/* Optionally, add a visible honeypot field if you want (recommended for spam prevention) */}
+            <div style={{ display: 'none' }}>
+                <label>
+                    Don’t fill this out: <input name="bot-field" />
+                </label>
+            </div>
+
             <div
                 className={classNames('w-full', 'flex', 'flex-wrap', 'gap-8', mapStyles({ justifyContent: styles?.self?.justifyContent ?? 'flex-start' }))}
                 {...(fieldPath && { 'data-sb-field-path': '.fields' })}
