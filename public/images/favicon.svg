@@ -1,1 +1,14 @@
-<svg width="67" height="79" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M33.097 78.06a33.096 33.096 0 1 1 0-66.193V78.06ZM33.097 0a33.096 33.096 0 1 1 0 66.193V0Z" fill="#000024"/></svg>
+<svg version="1.2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 4000 4000" width="768" height="768">
+	<title>cullmedialogowebsite</title>
+	<style>
+		tspan { white-space:pre } 
+		.t0 { font-size: 3000px;fill: #30bced;font-family: "Helvetica Neue" } 
+		.t1 { font-size: 3000px;fill: #000000;font-family: "Helvetica Neue" } 
+	</style>
+	<text id="cm" style="transform: matrix(1,0,0,1,-46,2774)" >
+		<tspan x="0" y="0" class="t0">c</tspan><tspan  y="0" class="t1">m</tspan><tspan  y="0" class="t1">
+</tspan>
+	</text>
+	<text id="Layer 3" style="transform: matrix(1,0,0,1,3934,-2145)" >
+	</text>
+</svg>
