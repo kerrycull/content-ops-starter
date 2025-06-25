@@ -1,4 +1,4 @@
-<svg version="1.2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 4500 4500" width="768" height="768">
+<svg version="1.2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 5000 5000" width="768" height="768">
 	<title>cullmedialogowebsite</title>
 	<style>
 		tspan { white-space:pre } 
@@ -6,13 +6,9 @@
 		.t1 { font-size: 3000px;fill: #30bced;font-family: "Helvetica Neue" } 
 		.t2 { font-size: 3000px;fill: #000000;font-family: "Helvetica Neue" } 
 	</style>
-	<path id="" fill-rule="evenodd" class="s0" d="m2250 4500c-1244.3 0-2250-1005.8-2250-2250 0-1244.3 1005.8-2250 2250-2250 1244.3 0 2250 1005.8 2250 2250 0 1244.3-1005.8 2250-2250 2250z"/>
-	<text id="cm" style="transform: matrix(1,0,0,1,204,3024)" >
+	<path id="" fill-rule="evenodd" class="s0" d="m2500 5000c-1382.5 0-2500-1117.5-2500-2500 0-1382.5 1117.5-2500 2500-2500 1382.5 0 2500 1117.5 2500 2500 0 1382.5-1117.5 2500-2500 2500z"/>
+	<text id="cm" style="transform: matrix(1,0,0,1,435,3293)" >
 		<tspan x="0" y="0" class="t1">c</tspan><tspan  y="0" class="t2">m</tspan><tspan  y="0" class="t2">
 </tspan>
-	</text>
-	<text id="" style="transform: matrix(1,0,0,1,4458,1139)" >
-	</text>
-	<text id="Layer 3" style="transform: matrix(1,0,0,1,4184,-1895)" >
 	</text>
 </svg>
