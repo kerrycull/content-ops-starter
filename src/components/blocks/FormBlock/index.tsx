@@ -6,11 +6,40 @@ import { mapStylesToClassNames as mapStyles } from '../../../utils/map-styles-to
 import SubmitButtonFormControl from './SubmitButtonFormControl';
 
 export default function FormBlock(props) {
-    const formRef = React.createRef<HTMLFormElement>();
+    const formRef = React.useRef<HTMLFormElement>(null);
+    const [submitted, setSubmitted] = React.useState(false);
     const { fields = [], elementId, submitButton, className, styles = {}, 'data-sb-field-path': fieldPath } = props;
 
     if (fields.length === 0) {
         return null;
+    }
+
+    const handleSubmit = async (e: React.FormEvent) => {
+        e.preventDefault();
+        if (!formRef.current) return;
+
+        const formData = new FormData(formRef.current);
+        formData.append('form-name', elementId);
+
+        try {
+            await fetch('/', {
+                method: 'POST',
+                headers: { Accept: 'application/x-www-form-urlencoded' },
+                body: new URLSearchParams(Array.from(formData) as [string, string])
+            });
+            setSubmitted(true);
+            formRef.current.reset();
+        } catch (error) {
+            alert('There was a problem submitting the form. Please try again.');
+        }
+    };
+
+    if (submitted) {
+        return (
+            <div className="p-4 rounded bg-green-100 text-green-800">
+                <strong>Thank you!</strong> Your form has been submitted.
+            </div>
+        );
     }
 
     return (
@@ -37,8 +66,16 @@ export default function FormBlock(props) {
             data-netlify="true"
             ref={formRef}
             data-sb-field-path={fieldPath}
+            onSubmit={handleSubmit}
+            data-netlify-honeypot="bot-field"
         >
+            {/* Netlify-required fields */}
             <input type="hidden" name="form-name" value={elementId} />
+            <div style={{ display: 'none' }}>
+                <label>
+                    Don’t fill this out: <input name="bot-field" />
+                </label>
+            </div>
             <div
                 className={classNames('w-full', 'flex', 'flex-wrap', 'gap-8', mapStyles({ justifyContent: styles?.self?.justifyContent ?? 'flex-start' }))}
                 {...(fieldPath && { 'data-sb-field-path': '.fields' })}
