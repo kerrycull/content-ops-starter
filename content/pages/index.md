@@ -572,7 +572,7 @@ sections:
     type: GenericSection
     elementId: contactsection
 seo:
-  metaTitle: cullmedia
+  metaTitle: cull.media
   metaDescription: Influencer Marketing
   socialImage: /images/Screenshot 2025-06-25 at 3.42.41 pm.png
   type: Seo
