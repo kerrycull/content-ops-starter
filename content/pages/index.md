@@ -21,13 +21,13 @@ sections:
       styles:
         self:
           padding:
-            - pt-2
-            - pb-2
-            - pl-2
-            - pr-2
-          borderColor: border-dark
+            - pt-0
+            - pb-0
+            - pl-0
+            - pr-0
+          borderColor: border-light
           borderStyle: solid
-          borderWidth: 1
+          borderWidth: 0
           borderRadius: large
     colors: bg-light-fg-dark
     styles:
