@@ -368,6 +368,8 @@ sections:
           styles:
             self:
               borderRadius: medium
+              padding:
+                - pt-8
       - type: FeaturedItem
         title: Instagram & TikTok
         tagline: ''
@@ -388,6 +390,8 @@ sections:
           styles:
             self:
               borderRadius: medium
+              padding:
+                - pt-8
         actions: []
         colors: bg-neutralAlt-fg-dark
         styles:
@@ -422,6 +426,8 @@ sections:
           styles:
             self:
               borderRadius: medium
+              padding:
+                - pt-8
         actions: []
         colors: bg-neutralAlt-fg-dark
         styles:
@@ -456,6 +462,8 @@ sections:
           styles:
             self:
               borderRadius: medium
+              padding:
+                - pt-8
         actions: []
         colors: bg-neutral-fg-dark
         styles:
@@ -580,8 +588,9 @@ sections:
     elementId: contactsection
 seo:
   metaTitle: cull.media
-  metaDescription: Influencer Marketing
+  metaDescription: Influencer Marketing Campaign Management
   socialImage: /images/Screenshot 2025-06-25 at 3.42.41 pm.png
   type: Seo
+  metaTags: []
 type: PageLayout
 ---
