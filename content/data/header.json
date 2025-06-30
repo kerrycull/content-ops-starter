@@ -1,6 +1,5 @@
 {
     "logo": {
-        "url": "/images/cullmedialogolong-40h.svg",
         "altText": "Logo dark",
         "styles": {
             "self": {
@@ -9,7 +8,8 @@
                 ]
             }
         },
-        "type": "ImageBlock"
+        "type": "ImageBlock",
+        "url": "/images/cm2025-website.svg"
     },
     "primaryLinks": [],
     "secondaryLinks": [
