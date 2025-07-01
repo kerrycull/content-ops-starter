@@ -3,11 +3,14 @@ title: Home
 slug: /
 sections:
   - type: GenericSection
-    subtitle: Full-Funnel Influencer Marketing
+    subtitle: 'Conversion-driven influencer campaigns, tailored for impact.'
     text: >
-      Through strategic creator selection, high-impact content, and end-to-end
-      campaign execution, we help brands cut through the noise and build
-      meaningful connections that convert.
+      We help brands stand out in a crowded digital landscape by managing
+      influencer marketing campaigns from start to finish. From identifying the
+      right creators to crafting compelling content and executing full-funnel
+      campaigns with precision, we deliver strategies designed to build genuine
+      audience connection, strengthen brand presence, and drive measurable
+      results.
     actions: []
     media:
       type: VideoBlock
@@ -38,7 +41,7 @@ sections:
         textAlign: left
     title:
       type: TitleBlock
-      text: Tailored for Impact
+      text: Influencer Marketing Campaign Management
       color: text-dark
   - type: FeaturedItemsSection
     title:
@@ -587,8 +590,10 @@ sections:
     colors: bg-light-fg-dark
     elementId: contactsection
 seo:
-  metaTitle: cull.media
-  metaDescription: Influencer Marketing Campaign Management
+  metaTitle: Influencer Marketing Agency | Cull Media – Strategic Campaign Management
+  metaDescription: >-
+    Cull Media is a results-focused influencer marketing agency managing
+    campaigns from start to finish. Everything handled, nothing overlooked.
   socialImage: /images/Screenshot 2025-06-25 at 3.42.41 pm.png
   type: Seo
   metaTags: []
