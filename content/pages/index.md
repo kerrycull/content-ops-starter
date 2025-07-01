@@ -501,7 +501,7 @@ sections:
   - type: GenericSection
     title:
       type: TitleBlock
-      text: Creator Outreach
+      text: ''
       color: text-dark
     subtitle: We’ll Find the Perfect Match
     text: >
@@ -534,9 +534,9 @@ sections:
   - type: GenericSection
     title:
       type: TitleBlock
-      text: Say Hi!
+      text: ''
       color: text-dark
-    subtitle: ''
+    subtitle: Say Hi!
     text: >
       Have a project in mind or just want to explore how we can work together?
       Drop us a message and our team will get back to you within one business

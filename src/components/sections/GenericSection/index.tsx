@@ -54,14 +54,14 @@ export default function GenericSection(props) {
                             />
                         )}
                         {subtitle && (
-                            <p
+                            <h2
                                 className={classNames('text-lg', 'sm:text-2xl', styles?.subtitle ? mapStyles(styles?.subtitle) : undefined, {
                                     'mt-4': badge?.label || title?.text
                                 })}
                                 {...(enableAnnotations && { 'data-sb-field-path': '.subtitle' })}
                             >
                                 {subtitle}
-                            </p>
+                            </h2>
                         )}
                         {text && (
                             <Markdown
