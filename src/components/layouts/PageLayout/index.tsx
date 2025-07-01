@@ -12,11 +12,6 @@ export default function PageLayout(props) {
     return (
         <BaseLayout page={page} site={site}>
             <main id="main" className="sb-layout sb-page-layout">
-                {title && (
-                    <h1 className="sr-only" {...(enableAnnotations && { 'data-sb-field-path': 'title' })}>
-                        {title}
-                    </h1>
-                )}
                 {sections.length > 0 && (
                     <div {...(enableAnnotations && { 'data-sb-field-path': 'sections' })}>
                         {sections.map((section, index) => {
