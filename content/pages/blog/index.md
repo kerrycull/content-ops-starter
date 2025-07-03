@@ -1,21 +1,18 @@
 ---
 title: Blog
-slug: /
+slug: blog
 numOfPostsPerPage: 8
 enableSearch: true
 topSections:
-  - type: FeaturedPostsSection
+  - type: RecentPostsSection
     title:
       type: TitleBlock
-      text: Featured posts
+      text: Recent posts
       color: text-dark
       styles:
         self:
           textAlign: center
-    posts:
-      - content/pages/blog/testblog.md
-      - content/pages/blog/testblog2.md
-      - content/pages/blog/testblog3.md
+    recentCount: 3
     showThumbnail: true
     showExcerpt: true
     showDate: true
@@ -27,11 +24,6 @@ topSections:
     hoverEffect: thin-underline
     styles:
       self:
-        padding:
-          - pt-16
-          - pl-16
-          - pb-16
-          - pr-16
         justifyContent: center
 styles:
   title:
@@ -58,5 +50,5 @@ postFeed:
   variant: three-col-grid
   colors: bg-light-fg-dark
   hoverEffect: move-up
-isDraft: true
+isDraft: false
 ---

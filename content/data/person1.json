@@ -1,19 +1,6 @@
 {
-    "name": "Rhonda Piper",
-    "role": "Job title",
-    "image": {
-        "url": "/images/avatar1.svg",
-        "altText": "Rhonda Piper",
-        "styles": {
-            "self": {
-                "borderRadius": "medium",
-                "margin": [
-                    "mb-8"
-                ]
-            }
-        },
-        "type": "ImageBlock"
-    },
+    "name": "Cull Media",
+    "role": "",
     "colors": "bg-light-fg-dark",
     "styles": {
         "self": {
@@ -32,5 +19,5 @@
         }
     },
     "type": "Person",
-    "bio": "Lorem Ipsum is simply dummy text of the printing and typesetting industry.\n"
+    "bio": ""
 }
