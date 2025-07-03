@@ -254,7 +254,7 @@ sections:
         subtitle: ''
         text: >
           Every sponsorship draft lands in your hands first—we fine-tune based
-          on your feedback and guarantee full FTC compliance from start to
+          on your feedback and guarantee full government compliance from start to
           finish.
         image:
           type: ImageBlock
