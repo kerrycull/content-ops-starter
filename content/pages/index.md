@@ -3,7 +3,7 @@ title: Home
 slug: /
 sections:
   - type: GenericSection
-    subtitle: 'Conversion-driven influencer campaigns, tailored for impact.'
+    subtitle: 'Conversion-Driven Influencer Campaigns, Tailored for Impact.'
     text: >
       We help brands stand out in a crowded digital landscape by managing
       influencer marketing campaigns from start to finish. From identifying the
