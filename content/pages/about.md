@@ -18,16 +18,38 @@ sections:
       needle—connecting brands with the right creators and audiences. As a small
       team, we’re hands-on with every project, taking pride in the details and
       delivering real results, every time.
+
+
+      Over the past several years, influencer marketing has gone from niche to
+      necessary. But in a crowded space where everyone’s chasing impressions, we
+      focus on influence that actually converts. We don’t just look at follower
+      counts—we dive deeper into audience quality, platform behavior, and brand
+      alignment to make sure every partnership we activate has purpose.
+
+
+      The content landscape is constantly evolving. Short-form formats dominate
+      attention spans. Algorithms shift weekly. Audiences are more discerning
+      than ever. In this climate, brands can’t afford to blend in. That’s why we
+      build campaigns that are not only culturally relevant, but
+      performance-driven—tailored to your goals, whether that’s awareness,
+      engagement, or bottom-line impact.
+
+
+      We’ve worked across industries—from DTC and consumer tech to wellness,
+      fashion, and finance—building campaigns that feel human, not
+      transactional. Our network of creators spans micro to macro, across
+      TikTok, Instagram, YouTube, and emerging channels. And because we operate
+      as an extension of your team, we don’t just drop names and move on—we
+      manage every aspect: from sourcing and briefing to content approvals,
+      comms, compliance, and reporting.
+
+
+      We're obsessed with clarity and creativity in equal measure. That means
+      clean processes, transparent communication, and standout storytelling.
+      We’re also selective—about the creators we work with, the partnerships we
+      take on, and the results we chase.
     actions: []
     colors: bg-neutral-fg-dark
-    backgroundImage:
-      type: BackgroundImage
-      url: /images/abstract-background.svg
-      altText: Placeholder image
-      backgroundSize: cover
-      backgroundPosition: center
-      backgroundRepeat: no-repeat
-      opacity: 100
     styles:
       self:
         padding:
@@ -42,115 +64,14 @@ sections:
         textAlign: center
       subtitle:
         textAlign: center
-  - type: FeaturedPeopleSection
-    title:
-      type: TitleBlock
-      text: Meet the team
-      color: text-dark
-      styles:
-        self:
-          textAlign: center
-    people:
-      - content/data/person1.json
-      - content/data/person2.json
-      - content/data/person3.json
-      - content/data/person4.json
-      - content/data/person5.json
-      - content/data/person6.json
-    actions: []
-    variant: three-col-grid
-    colors: bg-light-fg-dark
-    styles:
-      self:
-        padding:
-          - pt-16
-          - pl-16
-          - pb-16
-          - pr-16
-        justifyContent: center
-      subtitle:
-        textAlign: center
-  - type: FeaturedItemsSection
-    title:
-      type: TitleBlock
-      text: FAQ
-      color: text-dark
-      styles:
-        self:
-          textAlign: center
-    subtitle: ''
-    items:
-      - type: FeaturedItem
-        title: Account Executive
-        subtitle: Sales
-        text: >-
-          Sed ut perspiciatis unde omnis iste natus error sit voluptatem
-          accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae.
-          explicabo.
-        actions: []
-        colors: bg-neutral-fg-dark
-        styles:
-          self:
-            padding:
-              - pt-8
-              - pl-8
-              - pb-8
-              - pr-8
-            textAlign: left
-            borderRadius: x-large
-            flexDirection: row
-            justifyContent: center
-      - type: FeaturedItem
-        title: Open Source Engineer
-        subtitle: Marketing
-        text: >-
-          Sed ut perspiciatis unde omnis iste natus error sit voluptatem
-          accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae.
-          explicabo.
-        actions: []
-        colors: bg-neutral-fg-dark
-        styles:
-          self:
-            padding:
-              - pt-8
-              - pl-8
-              - pb-8
-              - pr-8
-            textAlign: left
-            borderRadius: x-large
-            flexDirection: row
-            justifyContent: center
-      - type: FeaturedItem
-        title: Senior Software Engineer
-        subtitle: Engineering
-        text: >-
-          Sed ut perspiciatis unde omnis iste natus error sit voluptatem
-          accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae.
-          explicabo.
-        actions: []
-        colors: bg-neutral-fg-dark
-        styles:
-          self:
-            padding:
-              - pt-8
-              - pl-8
-              - pb-8
-              - pr-8
-            borderRadius: x-large
-            flexDirection: row
-    actions: []
-    variant: toggle-list
-    colors: bg-light-fg-dark
-    styles:
-      self:
-        padding:
-          - pb-40
-          - pt-16
-          - pl-3
-          - pr-3
-        justifyContent: center
-      subtitle:
-        textAlign: center
+    backgroundImage:
+      type: BackgroundImage
+      altText: altText of the image
+      backgroundSize: auto
+      backgroundPosition: center
+      backgroundRepeat: no-repeat
+      opacity: 100
+      url: /images/cullmedia-background.jpg
 slug: about
 seo:
   type: Seo
