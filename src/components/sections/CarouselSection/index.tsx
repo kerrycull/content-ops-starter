@@ -41,7 +41,7 @@ export default function CarouselSection(props) {
                         className={classNames(
                             'w-full',
                             'max-w-sectionBody',
-                            'text-lg',
+                            'text-xl',
                             'sm:text-2xl',
                             styles?.subtitle ? mapStyles(styles?.subtitle) : undefined,
                             {

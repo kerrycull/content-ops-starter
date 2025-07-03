@@ -51,7 +51,7 @@ sections:
         self:
           textAlign: center
       type: TitleBlock
-    subtitle: Powering Growth for Top Brands Across Diverse Industries
+    subtitle: Powering Growth for Brands
     items:
       - type: FeaturedItem
         title: Performance
