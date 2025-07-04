@@ -71,7 +71,7 @@ sections:
       backgroundPosition: center
       backgroundRepeat: no-repeat
       opacity: 100
-      url: /images/cullmedia-background.jpg
+      url: /images/cm-bg.webp
 slug: about
 seo:
   type: Seo
