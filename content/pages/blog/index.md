@@ -40,11 +40,11 @@ styles:
   title:
     textAlign: center
 seo:
-  metaTitle: Blog - Demo site
+  metaTitle: Insights & Trends | Cull Media Blog – Influencer Marketing Strategies
   metaDescription: >-
-    This is the blog of the demo site where we post about technology, product,
-    and design.
-  socialImage: /images/img-placeholder.svg
+    Explore influencer marketing tips, trends, and insights on the Cull Media
+    blog. Stay ahead with expert strategies and campaign inspiration.
+  socialImage: /images/Screenshot 2025-07-04 at 8.17.40 pm.png
   type: Seo
 type: PostFeedLayout
 bottomSections: []

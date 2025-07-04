@@ -221,9 +221,11 @@ slug: faq
 isDraft: false
 seo:
   type: Seo
-  metaTitle: Landing Page
-  metaDescription: Write here your new page's description including most relevant keywords.
+  metaTitle: FAQs | Cull Media – Influencer Marketing Questions Answered
+  metaDescription: >-
+    Have questions about how influencer campaigns work? Find answers to common
+    questions about Cull Media’s process, pricing, and partnerships.
   addTitleSuffix: true
-  socialImage: /images/main-hero.jpg
+  socialImage: /images/Screenshot 2025-07-04 at 8.17.54 pm.png
   metaTags: []
 ---

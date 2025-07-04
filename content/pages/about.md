@@ -75,8 +75,11 @@ sections:
 slug: about
 seo:
   type: Seo
-  metaTitle: Careers - Demo site
-  metaDescription: This is the careers page built with Netlify.
+  metaTitle: About Cull Media | Influencer Marketing Experts – Creative & Results-Driven
+  metaDescription: >-
+    Learn more about Cull Media — a boutique influencer marketing agency focused
+    on creative, results-driven campaigns and genuine partnerships.
   metaTags: []
+  socialImage: /images/Screenshot 2025-07-04 at 8.17.27 pm.png
 isDraft: false
 ---
