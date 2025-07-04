@@ -55,7 +55,7 @@ sections:
     items:
       - type: FeaturedItem
         title: Performance
-        subtitle: 100M+ Views in 2025
+        subtitle: Seen by Millions
         text: >
           Ensuring your brand shows up where it matters—in content that’s
           relevant, authentic, and niche-aligned.
@@ -162,12 +162,12 @@ sections:
       - url: /images/audiblelogo.svg
         altText: Telus logo
         type: ImageBlock
-      - url: /images/sailylogo.svg
-        altText: Contentful logo
-        type: ImageBlock
-      - url: /images/nordlogo.svg
-        altText: Sanity logo
-        type: ImageBlock
+[//]: #       - url: /images/sailylogo.svg
+[//]: #         altText: Contentful logo
+[//]: #         type: ImageBlock
+[//]: #       - url: /images/nordlogo.svg
+[//]: #         altText: Sanity logo
+[//]: #         type: ImageBlock
       - url: /images/dysonlogo.svg
         altText: Rangle logo
         type: ImageBlock
