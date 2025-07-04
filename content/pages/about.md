@@ -53,9 +53,9 @@ sections:
     styles:
       self:
         padding:
-          - pt-40
+          - pt-16
           - pl-4
-          - pb-40
+          - pb-16
           - pr-4
         alignItems: center
         flexDirection: row-reverse
