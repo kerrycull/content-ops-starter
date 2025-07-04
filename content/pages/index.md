@@ -162,12 +162,6 @@ sections:
       - url: /images/audiblelogo.svg
         altText: Telus logo
         type: ImageBlock
-[//]: #       - url: /images/sailylogo.svg
-[//]: #         altText: Contentful logo
-[//]: #         type: ImageBlock
-[//]: #       - url: /images/nordlogo.svg
-[//]: #         altText: Sanity logo
-[//]: #         type: ImageBlock
       - url: /images/dysonlogo.svg
         altText: Rangle logo
         type: ImageBlock
