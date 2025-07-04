@@ -12,7 +12,7 @@ sections:
           textAlign: center
     subtitle: ''
     text: >
-      Founded in 2018, **cull.media** is a boutique digital agency built on
+      Founded in 2018, **Cull Media** is a boutique digital agency built on
       creativity, strategy, and genuine relationships. We specialise in
       influencer marketing and content campaigns that actually move the
       needle—connecting brands with the right creators and audiences. As a small
