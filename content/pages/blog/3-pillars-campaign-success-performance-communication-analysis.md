@@ -53,10 +53,14 @@ isFeatured: false
 isDraft: false
 seo:
   type: Seo
-  metaTitle: lorem-ipsum
-  metaDescription: lorem-ipsum
+  metaTitle: Our Framework for High-Performing Influencer Campaigns | Cull Media
+  metaDescription: >-
+    See how Cull Media drives performance through clear goals, strong
+    communication, and data-led analysis—creating influencer campaigns that
+    deliver real results.
   addTitleSuffix: false
   metaTags: []
+  socialImage: /images/3-pillars-campaign-success-performance-communication-analysis.jpg
 colors: bg-light-fg-dark
 styles:
   self:

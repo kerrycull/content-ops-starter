@@ -41,10 +41,14 @@ isFeatured: false
 isDraft: false
 seo:
   type: Seo
-  metaTitle: lorem-ipsum
-  metaDescription: lorem-ipsum
+  metaTitle: Where Short-Form Content Works Best in 2025 | Cull Media
+  metaDescription: >-
+    Cull Media breaks down where short-form content is winning in 2025—TikTok,
+    Instagram Reels, YouTube Shorts—and how brands can maximize engagement on
+    each.
   addTitleSuffix: false
   metaTags: []
+  socialImage: /images/state-of-short-form-content-2025.jpg
 colors: bg-light-fg-dark
 styles:
   self:

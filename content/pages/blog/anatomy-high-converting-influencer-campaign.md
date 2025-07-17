@@ -53,10 +53,13 @@ isFeatured: false
 isDraft: false
 seo:
   type: Seo
-  metaTitle: lorem-ipsum
-  metaDescription: lorem-ipsum
+  metaTitle: How to Build High-Converting Influencer Campaigns | Cull Media
+  metaDescription: >-
+    Discover Cull Media’s step-by-step process for creating influencer campaigns
+    that drive engagement, sales, and lasting brand impact in 2025.
   addTitleSuffix: false
   metaTags: []
+  socialImage: /images/anatomy-high-converting-influencer-campaign.jpg
 colors: bg-light-fg-dark
 styles:
   self:

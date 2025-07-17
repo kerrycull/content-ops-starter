@@ -53,10 +53,14 @@ isFeatured: false
 isDraft: false
 seo:
   type: Seo
-  metaTitle: lorem-ipsum
-  metaDescription: lorem-ipsum
+  metaTitle: How to Write Better Influencer Briefs in 2025 | Cull Media
+  metaDescription: >-
+    Learn how to write effective influencer briefs that drive real results. Cull
+    Media shares common mistakes to avoid and best practices for high-performing
+    campaigns.
   addTitleSuffix: false
   metaTags: []
+  socialImage: /images/how-to-brief-a-creator-2025.jpg
 colors: bg-light-fg-dark
 styles:
   self:
