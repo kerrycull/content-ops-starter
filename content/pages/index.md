@@ -165,6 +165,12 @@ sections:
       - url: /images/dysonlogo.svg
         altText: Rangle logo
         type: ImageBlock
+      - url: /images/sailylogo.svg
+        altText: Contentful logo
+        type: ImageBlock
+      - url: /images/nordlogo.svg
+        altText: Sanity logo
+        type: ImageBlock
     motion: move-to-left
     colors: bg-light-fg-dark
     styles:
