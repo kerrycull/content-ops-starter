@@ -53,7 +53,7 @@ isFeatured: false
 isDraft: false
 seo:
   type: Seo
-  metaTitle: aaa
+  metaTitle: How to Choose the Right Influencers in 2025 | Cull Media
   metaDescription: >-
     Discover how Cull Media sources the right influencers—focusing on audience
     quality, engagement, and brand alignment to drive real results in 2025.
