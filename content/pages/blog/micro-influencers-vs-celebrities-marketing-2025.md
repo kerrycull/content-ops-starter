@@ -1,7 +1,7 @@
 ---
 type: PostLayout
 title: Why Micro-Influencers Outperform Celebrities in Influencer Marketing (2025)
-date: '2025-06-18'
+date: '2025-07-18'
 author: content/data/person1.json
 excerpt: ''
 bottomSections:
