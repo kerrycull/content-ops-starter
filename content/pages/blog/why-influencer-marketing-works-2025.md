@@ -56,7 +56,7 @@ seo:
   metaTitle: Why Influencer Marketing Still Works in 2025 | Cull Media
   metaDescription: >-
     Cull Media debunks the myth that influencer marketing is over—showing how
-    strategic, authentic creator partnerships still outperform traditional
+    strategic, authentic creator partnerships often outperform traditional
     advertising in 2025.
   addTitleSuffix: false
   metaTags: []
