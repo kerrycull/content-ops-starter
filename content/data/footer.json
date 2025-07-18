@@ -3,8 +3,30 @@
         "altText": "Logo light",
         "type": "ImageBlock"
     },
-    "text": "© 2025 Cull Media\n\n<info@cull.media>\n",
-    "socialLinks": [],
+    "text": "### © 2025 Cull Media\n\n",
+    "socialLinks": [
+        {
+            "type": "Social",
+            "altText": "Twitter link",
+            "url": "https://twitter.com/cull_media",
+            "icon": "twitter",
+            "elementId": ""
+        },
+        {
+            "type": "Social",
+            "altText": "Instagram link",
+            "url": "/cull.media",
+            "icon": "instagram",
+            "elementId": ""
+        },
+        {
+            "type": "Social",
+            "altText": "Email icon",
+            "url": "mailto:info@cull.media",
+            "icon": "mail",
+            "elementId": ""
+        }
+    ],
     "legalLinks": [],
     "copyrightText": "",
     "colors": "bg-dark-fg-light",
@@ -13,7 +35,7 @@
         "self": {
             "padding": [
                 "pb-0",
-                "pt-9",
+                "pt-10",
                 "pl-5"
             ],
             "margin": [
