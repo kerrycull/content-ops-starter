@@ -23,11 +23,6 @@ sections:
       aspectRatio: '16:9'
       styles:
         self:
-          padding:
-            - pt-0
-            - pb-0
-            - pl-0
-            - pr-0
           borderColor: border-light
           borderStyle: solid
           borderWidth: 0
@@ -37,6 +32,11 @@ sections:
       self:
         flexDirection: row
         justifyContent: center
+        padding:
+          - pt-16
+          - pl-16
+          - pb-16
+          - pr-16
       subtitle:
         textAlign: left
     title:
@@ -141,10 +141,10 @@ sections:
     styles:
       self:
         padding:
-          - pb-16
           - pt-16
-          - pl-16
-          - pr-16
+          - pl-8
+          - pb-16
+          - pr-8
         justifyContent: center
       subtitle:
         textAlign: center
@@ -254,8 +254,8 @@ sections:
         subtitle: ''
         text: >
           Every sponsorship draft lands in your hands first—we fine-tune based
-          on your feedback and guarantee full government compliance from start to
-          finish.
+          on your feedback and guarantee full government compliance from start
+          to finish.
         image:
           type: ImageBlock
           altText: Placeholder text
