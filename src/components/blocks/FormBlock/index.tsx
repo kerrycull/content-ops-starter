@@ -5,6 +5,13 @@ import { getComponent } from '../../components-registry';
 import { mapStylesToClassNames as mapStyles } from '../../../utils/map-styles-to-class-names';
 import SubmitButtonFormControl from './SubmitButtonFormControl';
 
+// Let TS know gtag can exist on window
+declare global {
+    interface Window {
+        gtag?: (...args: any[]) => void;
+    }
+}
+
 export default function FormBlock(props) {
     const formRef = React.useRef<HTMLFormElement>(null);
     const [submitted, setSubmitted] = React.useState(false);
@@ -13,6 +20,27 @@ export default function FormBlock(props) {
     if (fields.length === 0) {
         return null;
     }
+
+    // Same behavior as the snippet, but safe in React/TS
+    const gtagReportConversion = React.useCallback((url?: string) => {
+        const callback = () => {
+            if (typeof url !== 'undefined') {
+                window.location.href = url;
+            }
+        };
+
+        if (typeof window !== 'undefined' && typeof window.gtag === 'function') {
+            window.gtag('event', 'conversion', {
+                send_to: 'AW-17462240755/nDiDCOKhp4UbEPPL0oZB',
+                event_callback: callback
+            });
+        } else {
+            // If gtag didn't load for some reason, still run callback to avoid blocking UX
+            callback();
+        }
+
+        return false;
+    }, []);
 
     const handleSubmit = async (e: React.FormEvent) => {
         e.preventDefault();
@@ -27,6 +55,10 @@ export default function FormBlock(props) {
                 headers: { Accept: 'application/x-www-form-urlencoded' },
                 body: new URLSearchParams(Array.from(formData.entries()).map(([k, v]) => [k, String(v)]))
             });
+
+            // Fire the conversion after a successful submit
+            gtagReportConversion(); // pass a URL if you want to redirect after the event
+
             setSubmitted(true);
             formRef.current.reset();
         } catch (error) {
@@ -76,6 +108,7 @@ export default function FormBlock(props) {
                     Don’t fill this out: <input name="bot-field" />
                 </label>
             </div>
+
             <div
                 className={classNames('w-full', 'flex', 'flex-wrap', 'gap-8', mapStyles({ justifyContent: styles?.self?.justifyContent ?? 'flex-start' }))}
                 {...(fieldPath && { 'data-sb-field-path': '.fields' })}
@@ -92,6 +125,7 @@ export default function FormBlock(props) {
                     return <FormControl key={index} {...field} {...(fieldPath && { 'data-sb-field-path': `.${index}` })} />;
                 })}
             </div>
+
             {submitButton && (
                 <div className={classNames('mt-8', 'flex', mapStyles({ justifyContent: styles?.self?.justifyContent ?? 'flex-start' }))}>
                     <SubmitButtonFormControl {...submitButton} {...(fieldPath && { 'data-sb-field-path': '.submitButton' })} />
