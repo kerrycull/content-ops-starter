@@ -18,13 +18,13 @@ export default function DefaultBaseLayout(props) {
             </div>
 
             {/* Google tag (gtag.js) */}
-            <Script src="https://www.googletagmanager.com/gtag/js?id=AW-17462240755" strategy="afterInteractive" />
+            <Script src="https://www.googletagmanager.com/gtag/js?id=AW-17468610539" strategy="afterInteractive" />
             <Script id="gtag-init" strategy="afterInteractive">
                 {`
                           window.dataLayer = window.dataLayer || [];
                           function gtag(){window.dataLayer.push(arguments);}
                           gtag('js', new Date());
-                          gtag('config', 'AW-17462240755');
+                          gtag('config', 'AW-17468610539');
                         `}
             </Script>
         </div>

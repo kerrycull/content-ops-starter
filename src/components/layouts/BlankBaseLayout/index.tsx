@@ -1,6 +1,5 @@
 import * as React from 'react';
 import Head from 'next/head';
-import Script from 'next/script';
 import classNames from 'classnames';
 
 export default function BlankBaseLayout(props) {
