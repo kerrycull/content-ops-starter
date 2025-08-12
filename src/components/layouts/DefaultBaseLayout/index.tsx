@@ -2,6 +2,7 @@ import * as React from 'react';
 import classNames from 'classnames';
 import Header from '../../sections/Header';
 import Footer from '../../sections/Footer';
+import Script from 'next/script';
 
 export default function DefaultBaseLayout(props) {
     const { page, site } = props;
@@ -15,6 +16,17 @@ export default function DefaultBaseLayout(props) {
                 {props.children}
                 {site.footer && <Footer {...site.footer} enableAnnotations={enableAnnotations} />}
             </div>
+
+            {/* Google tag (gtag.js) */}
+            <Script src="https://www.googletagmanager.com/gtag/js?id=AW-17462240755" strategy="afterInteractive" />
+            <Script id="gtag-init" strategy="afterInteractive">
+                {`
+                          window.dataLayer = window.dataLayer || [];
+                          function gtag(){window.dataLayer.push(arguments);}
+                          gtag('js', new Date());
+                          gtag('config', 'AW-17462240755');
+                        `}
+            </Script>
         </div>
     );
 }

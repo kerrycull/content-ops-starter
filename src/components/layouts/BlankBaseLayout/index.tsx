@@ -16,17 +16,6 @@ export default function BlankBaseLayout(props) {
                 {site.favicon && <link rel="icon" href={site.favicon} />}
             </Head>
 
-            {/* Google tag (gtag.js) */}
-            <Script src="https://www.googletagmanager.com/gtag/js?id=AW-17462240755" strategy="afterInteractive" />
-            <Script id="gtag-init" strategy="afterInteractive">
-                {`
-          window.dataLayer = window.dataLayer || [];
-          function gtag(){window.dataLayer.push(arguments);}
-          gtag('js', new Date());
-          gtag('config', 'AW-17462240755');
-        `}
-            </Script>
-
             {props.children}
         </div>
     );
