@@ -31,7 +31,7 @@ export default function FormBlock(props) {
 
         if (typeof window !== 'undefined' && typeof window.gtag === 'function') {
             window.gtag('event', 'conversion', {
-                send_to: 'AW-17468610539/KepXCLe8noUbEOuv14lB',
+                send_to: 'AW-17471990262/wnNwCM2Rw4YbEPbTpYtB',
                 event_callback: callback
             });
         } else {
