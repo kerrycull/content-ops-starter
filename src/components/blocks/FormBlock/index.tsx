@@ -21,10 +21,10 @@ export default function FormBlock(props) {
         return null;
     }
 
-    // Same behavior as the snippet, but safe in React/TS
+    // Google Ads conversion event function
     const gtagReportConversion = React.useCallback((url?: string) => {
         const callback = () => {
-            if (typeof url !== 'undefined') {
+            if (url) {
                 window.location.href = url;
             }
         };
@@ -35,7 +35,7 @@ export default function FormBlock(props) {
                 event_callback: callback
             });
         } else {
-            // If gtag didn't load for some reason, still run callback to avoid blocking UX
+            // If gtag didn't load, still run the callback
             callback();
         }
 
@@ -56,8 +56,8 @@ export default function FormBlock(props) {
                 body: new URLSearchParams(Array.from(formData.entries()).map(([k, v]) => [k, String(v)]))
             });
 
-            // Fire the conversion after a successful submit
-            gtagReportConversion(); // pass a URL if you want to redirect after the event
+            // Fire Google Ads conversion event
+            gtagReportConversion();
 
             setSubmitted(true);
             formRef.current.reset();
@@ -110,7 +110,15 @@ export default function FormBlock(props) {
             </div>
 
             <div
-                className={classNames('w-full', 'flex', 'flex-wrap', 'gap-8', mapStyles({ justifyContent: styles?.self?.justifyContent ?? 'flex-start' }))}
+                className={classNames(
+                    'w-full',
+                    'flex',
+                    'flex-wrap',
+                    'gap-8',
+                    mapStyles({
+                        justifyContent: styles?.self?.justifyContent ?? 'flex-start'
+                    })
+                )}
                 {...(fieldPath && { 'data-sb-field-path': '.fields' })}
             >
                 {fields.map((field, index) => {
@@ -127,7 +135,15 @@ export default function FormBlock(props) {
             </div>
 
             {submitButton && (
-                <div className={classNames('mt-8', 'flex', mapStyles({ justifyContent: styles?.self?.justifyContent ?? 'flex-start' }))}>
+                <div
+                    className={classNames(
+                        'mt-8',
+                        'flex',
+                        mapStyles({
+                            justifyContent: styles?.self?.justifyContent ?? 'flex-start'
+                        })
+                    )}
+                >
                     <SubmitButtonFormControl {...submitButton} {...(fieldPath && { 'data-sb-field-path': '.submitButton' })} />
                 </div>
             )}

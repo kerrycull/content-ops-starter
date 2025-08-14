@@ -11,22 +11,22 @@ export default function DefaultBaseLayout(props) {
 
     return (
         <div className={classNames('sb-page', pageMeta.pageCssClasses)} {...(enableAnnotations && { 'data-sb-object-id': pageMeta.id })}>
+            {/* Google tag (gtag.js) */}
+            <Script src="https://www.googletagmanager.com/gtag/js?id=AW-17471990262" strategy="afterInteractive" />
+            <Script id="gtag-init" strategy="afterInteractive">
+                {`
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){ window.dataLayer.push(arguments); }
+          gtag('js', new Date());
+          gtag('config', 'AW-17471990262');
+        `}
+            </Script>
+
             <div className="sb-base sb-default-base-layout">
                 {site.header && <Header {...site.header} enableAnnotations={enableAnnotations} />}
                 {props.children}
                 {site.footer && <Footer {...site.footer} enableAnnotations={enableAnnotations} />}
             </div>
-
-            {/* Google tag (gtag.js) */}
-            <Script src="https://www.googletagmanager.com/gtag/js?id=AW-17471990262" strategy="afterInteractive" />
-            <Script id="gtag-init" strategy="afterInteractive">
-                {`
-                          window.dataLayer = window.dataLayer || [];
-                          function gtag(){window.dataLayer.push(arguments);}
-                          gtag('js', new Date());
-                          gtag('config', 'AW-17471990262');
-                        `}
-            </Script>
         </div>
     );
 }
