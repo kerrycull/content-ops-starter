@@ -5,6 +5,13 @@ import { getComponent } from '../../components-registry';
 import { mapStylesToClassNames as mapStyles } from '../../../utils/map-styles-to-class-names';
 import SubmitButtonFormControl from './SubmitButtonFormControl';
 
+// TS: let the compiler know about window.gtag
+declare global {
+    interface Window {
+        gtag?: (...args: any[]) => void;
+    }
+}
+
 export default function FormBlock(props) {
     const formRef = React.useRef<HTMLFormElement>(null);
     const [submitted, setSubmitted] = React.useState(false);
@@ -13,6 +20,25 @@ export default function FormBlock(props) {
     if (fields.length === 0) {
         return null;
     }
+
+    // Google Ads conversion helper (matches your snippet)
+    const gtagReportConversion = (url?: string) => {
+        const callback = () => {
+            if (typeof url !== 'undefined') {
+                window.location.href = url;
+            }
+        };
+        if (typeof window !== 'undefined' && typeof window.gtag === 'function') {
+            window.gtag('event', 'conversion', {
+                send_to: 'AW-17471990262/wnNwCM2Rw4YbEPbTpYtB',
+                event_callback: callback
+            });
+        } else {
+            // If gtag isn't available, just continue (and still redirect if provided)
+            callback();
+        }
+        return false;
+    };
 
     const handleSubmit = async (e: React.FormEvent) => {
         e.preventDefault();
@@ -27,6 +53,11 @@ export default function FormBlock(props) {
                 headers: { Accept: 'application/x-www-form-urlencoded' },
                 body: new URLSearchParams(Array.from(formData.entries()).map(([k, v]) => [k, String(v)]))
             });
+
+            // Fire the Google Ads conversion
+            // If you want to redirect after submit, pass a URL like '/thank-you'
+            gtagReportConversion(/* '/thank-you' */);
+
             setSubmitted(true);
             formRef.current.reset();
         } catch (error) {
