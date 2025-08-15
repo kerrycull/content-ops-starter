@@ -1,5 +1,5 @@
 ---
-title: Home
+title: Influencer Marketing Agency | Cull Media
 slug: /
 sections:
   - type: GenericSection
