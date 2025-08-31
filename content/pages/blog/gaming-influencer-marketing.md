@@ -3,22 +3,7 @@ type: PostLayout
 title: Why Gaming Influencers Are the New MVPs of Marketing in 2025
 date: '2025-08-30'
 author: content/data/person1.json
-excerpt: >-
-  Gaming creators dominate attention in 2025. Here’s why brands targeting
-  18–30-year-old gamers should see influencers as the real MVPs of modern
-  marketing.
-featuredImage:
-  type: ImageBlock
-  url: /images/streamer-twitch.webp
-  altText: Thumbnail
-  elementId: ''
-  styles:
-    self:
-      padding:
-        - pt-0
-        - pl-0
-        - pb-0
-        - pr-0
+excerpt: ''
 bottomSections:
   - type: DividerSection
     title: Divider
@@ -100,6 +85,14 @@ colors: bg-light-fg-dark
 styles:
   self:
     flexDirection: row
+featuredImage:
+  type: ImageBlock
+  url: /images/streamer-twitch.jpg
+  altText: Thumbnail
+  elementId: ''
+  styles:
+    self:
+      borderRadius: medium
 ---
 If you want to understand why gaming influencers matter right now, start with a Twitch chat on a Saturday night. Thousands of people from around the world are tuned in, spamming emotes, laughing at inside jokes, and hanging on every word their favorite streamer says. For a generation of gamers — especially guys aged 18–30 — this *is* the new “water cooler.” It’s where community lives.
 
