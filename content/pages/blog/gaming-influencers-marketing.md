@@ -1,9 +1,21 @@
 ---
 type: PostLayout
 title: Why Gaming Influencers Are the New MVPs of Marketing in 2025
-date: '2025-08-30'
+date: '2025-08-26'
 author: content/data/person1.json
 excerpt: ''
+featuredImage:
+  type: ImageBlock
+  url: /images/gaming-influencer.jpg
+  altText: Thumbnail
+  elementId: ''
+  styles:
+    self:
+      padding:
+        - pt-0
+        - pl-0
+        - pb-0
+        - pr-0
 bottomSections:
   - type: DividerSection
     title: Divider
@@ -22,10 +34,8 @@ bottomSections:
       text: ''
       color: text-dark
     subtitle: Say Hi!
-    text: >
-      Have a project in mind or just want to explore how we can work together?
-      Drop us a message and our team will get back to you within one business
-      day. We're here to turn your ideas into impact.
+    text: |
+      Want to learn more about how we can help?
     actions: []
     media:
       type: FormBlock
@@ -68,8 +78,12 @@ bottomSections:
           borderStyle: solid
           borderWidth: 1
           borderRadius: large
+    badge:
+      type: Badge
+      label: ''
+      color: text-primary
     colors: bg-light-fg-dark
-slug: gaming-influencer-marketing
+slug: gaming-influencers-marketing
 isFeatured: false
 isDraft: false
 seo:
@@ -80,23 +94,17 @@ seo:
     18–30-year-old gamers should see influencers as the real MVPs of modern
     marketing.
   addTitleSuffix: false
+  socialImage: /images/gaming-influencer.jpg
   metaTags: []
 colors: bg-light-fg-dark
 styles:
   self:
-    flexDirection: row
-featuredImage:
-  type: ImageBlock
-  url: /images/streamer-twitch.jpg
-  altText: Thumbnail
-  elementId: ''
-  styles:
-    self:
-      borderRadius: medium
+    flexDirection: col
 ---
 If you want to understand why gaming influencers matter right now, start with a Twitch chat on a Saturday night. Thousands of people from around the world are tuned in, spamming emotes, laughing at inside jokes, and hanging on every word their favorite streamer says. For a generation of gamers — especially guys aged 18–30 — this *is* the new “water cooler.” It’s where community lives.
 
-![](/images/twitch-gaming.webp)
+![](http://localhost:8090/images/twitch-gaming.webp)
+
 
 And here’s the kicker: when that same streamer takes a sip of an energy drink, or mentions the headset they’re using mid-match, it doesn’t feel like an ad. It feels like a friend giving a recommendation. That’s the difference between traditional advertising and influencer marketing in gaming. One interrupts; the other integrates.
 
@@ -104,13 +112,15 @@ And here’s the kicker: when that same streamer takes a sip of an energy drink,
 
 Gamers spend hours watching the same creators day after day. That builds trust — the kind of trust brands can’t buy with a billboard. According to industry research, gaming audiences watch **95+ minutes per day** on average, and that kind of time builds a relationship. When a creator says “this controller actually improved my aim,” fans don’t hear it as a sales pitch. They hear it as advice.
 
-![](/images/creator-trust.jpg)
+![](http://localhost:8090/images/creator-trust.jpg)
+
 
 #### Why gaming is the perfect testing ground for brands
 
 The gaming space moves fast. A meme can go viral in the middle of a stream, a new game can drop overnight, and an influencer can drive thousands of viewers to a Discord server in minutes. That real-time feedback loop makes gaming the ultimate lab for marketing campaigns. You know instantly what’s working and what isn’t — and you can pivot on the fly.
 
-![](/images/viewer-demographics.png)
+![](http://localhost:8090/images/viewer-demographics.png)
+
 
 #### What this means for brands
 
