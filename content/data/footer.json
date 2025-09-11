@@ -9,7 +9,7 @@
             "type": "Social",
             "altText": "X link",
             "url": "https://x.com/cull_media",
-            "icon": "x",
+            "icon": "twitter",
             "elementId": ""
         },
         {
@@ -19,7 +19,7 @@
             "icon": "instagram",
             "elementId": ""
         },
-                {
+        {
             "type": "Social",
             "altText": "LinkedIn link",
             "url": "https://linkedin.com/company/cull-media",
