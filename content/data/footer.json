@@ -7,8 +7,8 @@
     "socialLinks": [
         {
             "type": "Social",
-            "altText": "Twitter link",
-            "url": "https://twitter.com/cull_media",
+            "altText": "X link",
+            "url": "https://x.com/cull_media",
             "icon": "twitter",
             "elementId": ""
         },
@@ -17,6 +17,13 @@
             "altText": "Instagram link",
             "url": "https://instagram.com/cull.media",
             "icon": "instagram",
+            "elementId": ""
+        },
+                {
+            "type": "Social",
+            "altText": "LinkedIn link",
+            "url": "https://linkedin.com/company/cull-media",
+            "icon": "linkedin",
             "elementId": ""
         },
         {
