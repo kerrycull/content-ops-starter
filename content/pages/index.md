@@ -153,12 +153,19 @@ sections:
       - url: /images/hellofreshlogo.svg
         altText: Empathy logo
         type: ImageBlock
-      - url: /images/auralogo.svg
-        altText: Wellster logo
-        type: ImageBlock
       - url: /images/casetifylogo.svg
         altText: Vise logo
         type: ImageBlock
+      - url: /images/auralogo.svg
+        altText: Wellster logo
+        type: ImageBlock
+      - type: ImageBlock
+        url: /images/moonbounce-logo.svg
+        altText: Image alt text placeholder
+        elementId: ''
+        styles:
+          self:
+            borderRadius: medium
       - url: /images/audiblelogo.svg
         altText: Telus logo
         type: ImageBlock
