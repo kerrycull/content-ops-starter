@@ -6,7 +6,7 @@ author: content/data/person1.json
 excerpt: ''
 featuredImage:
   type: ImageBlock
-  url: /images/moonbounce-thumb2.jpg
+  url: /images/moonbounce-thumb3.jpg
   altText: Thumbnail
   elementId: ''
   styles:
@@ -95,7 +95,7 @@ seo:
     influencer brand deals and sponsorships. From creator sourcing to campaign
     execution, this case study shows how engagement drove adoption.
   addTitleSuffix: false
-  socialImage: /images/moonbounce-thumb2.jpg
+  socialImage: /images/moonbounce-thumb3.jpg
   metaTags: []
 colors: bg-light-fg-dark
 styles:
@@ -120,7 +120,7 @@ Rather than blasting this out to dozens of random streamers, we focused on creat
 
 Within just **two weeks**, we sourced a shortlist of creators who fit the product perfectly.
 
-![](/images/livestream-overlay-creator.jpg)
+![](/images/cm2025-dreamthief.gif)
 
 ### The Campaign in Motion
 
@@ -138,7 +138,7 @@ Our role included:
 
 Because it was creator-led, audiences didn’t just see a product — they saw it working in real time.
 
-![](/images/cm2025-esfand.jpg)
+![](/images/cm2025-esfand.gif)
 
 ### The Results
 

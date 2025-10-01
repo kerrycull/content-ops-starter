@@ -343,6 +343,35 @@ sections:
         justifyContent: center
       subtitle:
         textAlign: center
+  - type: FeaturedPostsSection
+    title:
+      type: TitleBlock
+      text: Featured posts
+      color: text-dark
+      styles:
+        self:
+          textAlign: center
+    posts:
+      - content/pages/blog/moonbounce-livestream-campaign-case-study.md
+      - content/pages/blog/influencer-engagement-vs-impressions.md
+      - content/pages/blog/anatomy-high-converting-influencer-campaign.md
+    showThumbnail: true
+    showExcerpt: true
+    showDate: true
+    showAuthor: true
+    actions: []
+    elementId: ''
+    variant: three-col-grid
+    colors: bg-light-fg-dark
+    hoverEffect: thin-underline
+    styles:
+      self:
+        padding:
+          - pt-16
+          - pl-16
+          - pb-16
+          - pr-16
+        justifyContent: center
   - type: CarouselSection
     items:
       - type: FeaturedItem
@@ -358,7 +387,7 @@ sections:
           content, delivering key messaging with clear prompts at the start and
           end to drive engagement.
         actions: []
-        colors: bg-neutralAlt-fg-dark
+        colors: bg-light-fg-dark
         styles:
           self:
             padding:
@@ -403,7 +432,7 @@ sections:
               padding:
                 - pt-8
         actions: []
-        colors: bg-neutralAlt-fg-dark
+        colors: bg-light-fg-dark
         styles:
           self:
             padding:
@@ -439,7 +468,7 @@ sections:
               padding:
                 - pt-8
         actions: []
-        colors: bg-neutralAlt-fg-dark
+        colors: bg-light-fg-dark
         styles:
           self:
             padding:
@@ -475,7 +504,7 @@ sections:
               padding:
                 - pt-8
         actions: []
-        colors: bg-neutral-fg-dark
+        colors: bg-light-fg-dark
         styles:
           self:
             padding:
@@ -488,23 +517,12 @@ sections:
             flexDirection: row
             justifyContent: center
     variant: next-prev-nav
-    colors: bg-light-fg-dark
+    colors: bg-neutral-fg-dark
     styles:
       self:
         justifyContent: center
       subtitle:
         textAlign: center
-  - type: DividerSection
-    title: Divider
-    elementId: ''
-    colors: bg-light-fg-dark
-    styles:
-      self:
-        padding:
-          - pt-3
-          - pl-3
-          - pb-3
-          - pr-3
   - type: GenericSection
     title:
       type: TitleBlock
