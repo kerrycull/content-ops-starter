@@ -3,7 +3,7 @@
         "altText": "Logo light",
         "type": "ImageBlock"
     },
-    "text": "### © 2025 Cull Media\n\n",
+    "text": "### © 2025 Cull Media\n\n",
     "socialLinks": [
         {
             "type": "Social",
@@ -38,14 +38,12 @@
     "copyrightText": "",
     "colors": "bg-dark-fg-light",
     "type": "Footer",
+    "title": "",
     "styles": {
         "self": {
             "padding": [
-                "pb-0",
-                "pt-10",
-                "pl-4"
+                "pt-0"
             ]
         }
-    },
-    "title": ""
+    }
 }
