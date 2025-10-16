@@ -21,7 +21,7 @@ export default function Footer(props) {
         enableAnnotations
     } = props;
 
-    // ----- NEW: local state + submit handler (AJAX, no refresh) -----
+    // Local state for newsletter form
     const [email, setEmail] = React.useState('');
     const [loading, setLoading] = React.useState(false);
     const [status, setStatus] = React.useState('idle'); // 'idle' | 'success' | 'error'
@@ -32,11 +32,10 @@ export default function Footer(props) {
         setLoading(true);
         setStatus('idle');
 
-        // Netlify Forms AJAX post: send x-www-form-urlencoded to "/"
         const data = {
             'form-name': 'newsletter',
             email,
-            'bot-field': '' // honeypot stays empty
+            'bot-field': ''
         };
 
         try {
@@ -53,7 +52,6 @@ export default function Footer(props) {
             setLoading(false);
         }
     };
-    // ---------------------------------------------------------------
 
     return (
         <footer
@@ -105,7 +103,12 @@ export default function Footer(props) {
                                     <ul className="flex items-center gap-5 mt-6" {...(enableAnnotations && { 'data-sb-field-path': 'socialLinks' })}>
                                         {socialLinks.map((link, i) => (
                                             <li key={i} className="text-xl">
-                                                <Social {...link} {...(enableAnnotations && { 'data-sb-field-path': `.${i}` })} />
+                                                <Social
+                                                    {...link}
+                                                    {...(enableAnnotations && {
+                                                        'data-sb-field-path': `.${i}`
+                                                    })}
+                                                />
                                             </li>
                                         ))}
                                     </ul>
@@ -115,30 +118,41 @@ export default function Footer(props) {
 
                         {/* Links */}
                         <div className="lg:col-span-4 grid grid-cols-2 gap-8">
-                            {primaryLinks && <FooterLinksGroup {...primaryLinks} {...(enableAnnotations && { 'data-sb-field-path': 'primaryLinks' })} />}
-                            {secondaryLinks && <FooterLinksGroup {...secondaryLinks} {...(enableAnnotations && { 'data-sb-field-path': 'secondaryLinks' })} />}
+                            {primaryLinks && (
+                                <FooterLinksGroup
+                                    {...primaryLinks}
+                                    {...(enableAnnotations && {
+                                        'data-sb-field-path': 'primaryLinks'
+                                    })}
+                                />
+                            )}
+                            {secondaryLinks && (
+                                <FooterLinksGroup
+                                    {...secondaryLinks}
+                                    {...(enableAnnotations && {
+                                        'data-sb-field-path': 'secondaryLinks'
+                                    })}
+                                />
+                            )}
                         </div>
 
                         {/* Subscribe */}
-                        <div className="lg:col-span-4">
-                            <h2 className="text-sm tracking-wider opacity-90 mb-3">Want to get our newsletter?</h2>
+                        <div className="lg:col-span-4 text-inherit">
+                            <h2 className="text-sm tracking-wider opacity-90 mb-3 text-inherit">Want to get our newsletter?</h2>
 
-                            {/* If success, show confirmation box instead of form */}
                             {status === 'success' ? (
-                                <div role="status" aria-live="polite" className="px-4 py-3 rounded border border-white/15 bg-white/5 text-sm">
+                                <div role="status" aria-live="polite" className="px-4 py-3 rounded border border-white/15 bg-white/5 text-sm text-inherit">
                                     Email submitted! Check your inbox for confirmation.
                                 </div>
                             ) : (
-                                // Netlify Forms (kept for backend processing), but we intercept submit
                                 <form
                                     name="newsletter"
                                     method="POST"
                                     data-netlify="true"
                                     netlify-honeypot="bot-field"
-                                    className="w-full"
+                                    className="w-full text-inherit"
                                     onSubmit={handleSubmit}
                                 >
-                                    {/* Netlify hidden fields */}
                                     <input type="hidden" name="form-name" value="newsletter" />
                                     <p className="hidden">
                                         <label>
@@ -146,7 +160,6 @@ export default function Footer(props) {
                                         </label>
                                     </p>
 
-                                    {/* Flat, clean input + button */}
                                     <div className="flex flex-col sm:flex-row sm:items-stretch gap-2 sm:gap-0">
                                         <label htmlFor="newsletter-email" className="sr-only">
                                             Email
@@ -162,7 +175,7 @@ export default function Footer(props) {
                                             className={classNames(
                                                 'flex-1 px-3 py-2 text-sm',
                                                 'rounded sm:rounded-l-md sm:rounded-r-none',
-                                                'border border-white/15 bg-white/5 text-white placeholder-white/70',
+                                                'border border-white/15 bg-white/5 text-inherit placeholder-white/70',
                                                 'focus:outline-none focus:ring-1 focus:ring-white/20 focus:border-white/30',
                                                 loading && 'opacity-70 cursor-not-allowed'
                                             )}
@@ -190,7 +203,7 @@ export default function Footer(props) {
                                         </p>
                                     )}
 
-                                    <p className="text-xs opacity-70 mt-2">No spam. Unsubscribe anytime.</p>
+                                    <p className="text-xs opacity-70 mt-2 text-inherit">No spam. Unsubscribe anytime.</p>
                                 </form>
                             )}
                         </div>
@@ -200,15 +213,17 @@ export default function Footer(props) {
 
                 {/* Bottom: legal + copyright */}
                 {(copyrightText || legalLinks.length > 0) && (
-                    <div className="border-t border-white/10 pt-6 mt-12 mb-6 flex flex-col gap-4 sm:flex-row sm:items-center sm:justify-between">
+                    <div className="border-t border-white/10 pt-6 mt-12 mb-6 flex flex-col gap-4 sm:flex-row sm:items-center sm:justify-between text-inherit">
                         {legalLinks.length > 0 && (
                             <ul className="flex flex-wrap gap-x-6 gap-y-2" {...(enableAnnotations && { 'data-sb-field-path': 'legalLinks' })}>
                                 {legalLinks.map((link, index) => (
                                     <li key={index}>
                                         <Action
                                             {...link}
-                                            className="text-sm opacity-90 hover:opacity-100"
-                                            {...(enableAnnotations && { 'data-sb-field-path': `.${index}` })}
+                                            className="text-sm opacity-90 hover:opacity-100 text-inherit"
+                                            {...(enableAnnotations && {
+                                                'data-sb-field-path': `.${index}`
+                                            })}
                                         />
                                     </li>
                                 ))}
@@ -216,9 +231,15 @@ export default function Footer(props) {
                         )}
                         {copyrightText && (
                             <Markdown
-                                options={{ forceInline: true, forceWrapper: true, wrapper: 'p' }}
-                                className="sb-markdown text-sm opacity-80"
-                                {...(enableAnnotations && { 'data-sb-field-path': 'copyrightText' })}
+                                options={{
+                                    forceInline: true,
+                                    forceWrapper: true,
+                                    wrapper: 'p'
+                                }}
+                                className="sb-markdown text-sm opacity-80 text-inherit"
+                                {...(enableAnnotations && {
+                                    'data-sb-field-path': 'copyrightText'
+                                })}
                             >
                                 {copyrightText}
                             </Markdown>
@@ -238,14 +259,20 @@ function FooterLinksGroup(props) {
     return (
         <div data-sb-field-path={fieldPath}>
             {title && (
-                <h3 className="uppercase text-sm tracking-wider opacity-90" {...(fieldPath && { 'data-sb-field-path': '.title' })}>
+                <h3 className="uppercase text-sm tracking-wider opacity-90 text-inherit" {...(fieldPath && { 'data-sb-field-path': '.title' })}>
                     {title}
                 </h3>
             )}
             <ul className={classNames('space-y-2.5 mt-3', { 'mt-4': title })} {...(fieldPath && { 'data-sb-field-path': '.links' })}>
                 {links.map((link, index) => (
                     <li key={index}>
-                        <Action {...link} className="text-sm opacity-90 hover:opacity-100" {...(fieldPath && { 'data-sb-field-path': `.${index}` })} />
+                        <Action
+                            {...link}
+                            className="text-sm opacity-90 hover:opacity-100 text-inherit"
+                            {...(fieldPath && {
+                                'data-sb-field-path': `.${index}`
+                            })}
+                        />
                     </li>
                 ))}
             </ul>
