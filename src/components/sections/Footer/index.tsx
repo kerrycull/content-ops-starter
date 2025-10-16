@@ -121,12 +121,12 @@ export default function Footer(props) {
 
                         {/* Subscribe */}
                         <div className="lg:col-span-4">
-                            <h2 className="uppercase text-sm tracking-wider opacity-90 mb-3">Subscribe</h2>
+                            <h2 className="text-sm tracking-wider opacity-90 mb-3">Want to get our newsletter?</h2>
 
                             {/* If success, show confirmation box instead of form */}
                             {status === 'success' ? (
                                 <div role="status" aria-live="polite" className="px-4 py-3 rounded border border-white/15 bg-white/5 text-sm">
-                                    🎉 Email submitted — check your inbox for a confirmation.
+                                    Email submitted! Check your inbox for confirmation.
                                 </div>
                             ) : (
                                 // Netlify Forms (kept for backend processing), but we intercept submit
