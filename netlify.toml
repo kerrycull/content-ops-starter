@@ -4,3 +4,27 @@
 
 [[plugins]]
 package = "@netlify/plugin-nextjs"
+
+[[redirects]]
+  from = "https://cullmediagroup.com/*"
+  to = "https://cull.media/:splat"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "https://www.cullmediagroup.com/*"
+  to = "https://cull.media/:splat"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "http://cullmediagroup.com/*"
+  to = "https://cull.media/:splat"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "http://www.cullmediagroup.com/*"
+  to = "https://cull.media/:splat"
+  status = 301
+  force = true
