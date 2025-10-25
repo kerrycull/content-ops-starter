@@ -106,7 +106,7 @@ styles:
 
 **Moonbounce** has solidified itself in gaming culture over the years through various influencer campaigns showcasing its revolutionary web browser extension that combines gaming and internet browsing seamlessly. Recently, they launched a livestream overlay plugin that gives creators another way to incentivize their audiences to tune in.
 
-The team behind Moonbounce are experts in community building, and with deep ties to online multiplayer games, their product was a perfect fit for streamers on Twitch and Kick alike. The goal wasn’t just visibility — it was to reach the right gaming communities and drive adoption quickly.
+The team behind Moonbounce are experts in community building, and with deep ties to online multiplayer games, their product was a perfect fit for streamers on Twitch and Kick alike. The goal wasn’t just visibility, it was to reach the right gaming communities and drive adoption quickly.
 
 ### Finding the Right Fit
 
@@ -142,11 +142,11 @@ Because it was creator-led, audiences didn’t just see a product — they saw i
 
 ### The Results
 
-Moonbounce’s livestream overlay was seen by thousands of viewers live on Twitch over multiple days, and the launch generated a wave of new users for the platform. Audiences across different gaming communities were exposed to a tool that aligned perfectly with their interests — making the campaign mutually beneficial for both brand and creator.
+Moonbounce’s livestream overlay was seen by thousands of viewers live on Twitch over multiple days, and the launch generated a wave of new users for the platform. Audiences across different gaming communities were exposed to a tool that aligned perfectly with their interests, making the campaign mutually beneficial for both brand and creator.
 
-More importantly, Moonbounce’s product wasn’t just promoted — it was adopted by creators and their communities.
+More importantly, Moonbounce’s product wasn’t just promoted, it was adopted by creators and their communities.
 
-![](http://localhost:8090/images/Screenshot%202025-09-19%20at%2012.45.35%E2%80%AFpm.png)
+![](http://localhost:8090/images/moonbounce-website.png)
 
 ### Why This Worked
 
@@ -162,4 +162,4 @@ Looking back, three things made this campaign click:
 
 ### Looking Forward
 
-For us, this wasn’t just about a one-off activation. It was about helping Moonbounce carve out a place in the streaming ecosystem. The overlay reached the exact audience it was built for — and that’s what influencer marketing should do.
+For us, this wasn’t just about a one-off activation. It was about helping Moonbounce carve out a place in the streaming ecosystem. The overlay reached the exact audience it was built for, and that’s what influencer marketing should do.
